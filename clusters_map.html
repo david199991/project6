@@ -1,0 +1,3254 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_78a808317cb8642feaff0ca749ae6f1c {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_78a808317cb8642feaff0ca749ae6f1c" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_78a808317cb8642feaff0ca749ae6f1c = L.map(
+                "map_78a808317cb8642feaff0ca749ae6f1c",
+                {
+                    center: [36.45040159614432, 127.57014040515568],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 13,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_ad36303613612dc3b6cc278eda1de3ce = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_ad36303613612dc3b6cc278eda1de3ce.addTo(map_78a808317cb8642feaff0ca749ae6f1c);
+        
+    
+            var marker_85d3e820813e4e0e49f6050e219dc0f1 = L.marker(
+                [35.2061167413, 126.8122630468],
+                {
+}
+            ).addTo(map_78a808317cb8642feaff0ca749ae6f1c);
+        
+    
+            var icon_4282e6a4af2d4cc816bd8b293056d5ea = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "triangle-exclamation",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_85d3e820813e4e0e49f6050e219dc0f1.setIcon(icon_4282e6a4af2d4cc816bd8b293056d5ea);
+        
+    
+        var popup_ca19cd27278031518692c395fc6f3c06 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e7234ef24f1027d8be5de986a27ddfd2 = $(`<div id="html_e7234ef24f1027d8be5de986a27ddfd2" style="width: 100.0%; height: 100.0%;">사고발생 위치: 광주광역시 광산구 오선동 548-5 (하남산단7번로 153)<br>사고발생일자: 2024-10-15 오전 00:00<br>클러스터: 0</div>`)[0];
+                popup_ca19cd27278031518692c395fc6f3c06.setContent(html_e7234ef24f1027d8be5de986a27ddfd2);
+            
+        
+
+        marker_85d3e820813e4e0e49f6050e219dc0f1.bindPopup(popup_ca19cd27278031518692c395fc6f3c06)
+        ;
+
+        
+    
+    
+            var marker_09b6e556982f051a0d603c17eac2287a = L.marker(
+                [35.2061118899, 126.8125041724],
+                {
+}
+            ).addTo(map_78a808317cb8642feaff0ca749ae6f1c);
+        
+    
+            var icon_8684082a14f5f77328bc3fda21e502d9 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "triangle-exclamation",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_09b6e556982f051a0d603c17eac2287a.setIcon(icon_8684082a14f5f77328bc3fda21e502d9);
+        
+    
+        var popup_2c924d5a0c13d4fef92f8702067e8186 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a29ef050a20ec08f5547c37add57aa3e = $(`<div id="html_a29ef050a20ec08f5547c37add57aa3e" style="width: 100.0%; height: 100.0%;">사고발생 위치: 광주광역시 광산구 오선동 548-5<br>사고발생일자: 2023-05-18 오전 00:00<br>클러스터: 0</div>`)[0];
+                popup_2c924d5a0c13d4fef92f8702067e8186.setContent(html_a29ef050a20ec08f5547c37add57aa3e);
+            
+        
+
+        marker_09b6e556982f051a0d603c17eac2287a.bindPopup(popup_2c924d5a0c13d4fef92f8702067e8186)
+        ;
+
+        
+    
+    
+            var marker_eee20cb636dd98bddc7a5fed35770287 = L.marker(
+                [35.1489021927, 128.9815697173],
+                {
+}
+            ).addTo(map_78a808317cb8642feaff0ca749ae6f1c);
+        
+    
+            var icon_1f7b250c28f1369cac6b22271e9241c4 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "triangle-exclamation",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_eee20cb636dd98bddc7a5fed35770287.setIcon(icon_1f7b250c28f1369cac6b22271e9241c4);
+        
+    
+        var popup_70e7714ac8439435cb395fef81e08a57 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_2118ef07e37c038e80c3d77c8998dcfc = $(`<div id="html_2118ef07e37c038e80c3d77c8998dcfc" style="width: 100.0%; height: 100.0%;">사고발생 위치: 부산광역시 사상구 학장동 226-1(새벽로90)<br>사고발생일자: 2024-09-21 오전 00:00<br>클러스터: 1</div>`)[0];
+                popup_70e7714ac8439435cb395fef81e08a57.setContent(html_2118ef07e37c038e80c3d77c8998dcfc);
+            
+        
+
+        marker_eee20cb636dd98bddc7a5fed35770287.bindPopup(popup_70e7714ac8439435cb395fef81e08a57)
+        ;
+
+        
+    
+    
+            var marker_5b0c306203866cadf2b127adb9fea6d5 = L.marker(
+                [35.1493225074, 128.9815481708],
+                {
+}
+            ).addTo(map_78a808317cb8642feaff0ca749ae6f1c);
+        
+    
+            var icon_1bd207246760b98a67eeab992ccb4f77 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "triangle-exclamation",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_5b0c306203866cadf2b127adb9fea6d5.setIcon(icon_1bd207246760b98a67eeab992ccb4f77);
+        
+    
+        var popup_90f2e3dc0afa5d43123430c8c0fd8ff6 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_1d5c016ac6a7207f0d72edb6e5b32f25 = $(`<div id="html_1d5c016ac6a7207f0d72edb6e5b32f25" style="width: 100.0%; height: 100.0%;">사고발생 위치: 부산광역시 사상구 학장동 719-8 (새벽로 89)<br>사고발생일자: 2024-09-21 오전 00:00<br>클러스터: 1</div>`)[0];
+                popup_90f2e3dc0afa5d43123430c8c0fd8ff6.setContent(html_1d5c016ac6a7207f0d72edb6e5b32f25);
+            
+        
+
+        marker_5b0c306203866cadf2b127adb9fea6d5.bindPopup(popup_90f2e3dc0afa5d43123430c8c0fd8ff6)
+        ;
+
+        
+    
+    
+            var marker_34002577adeade891bf80bc6a5535a29 = L.marker(
+                [37.7239078432, 126.692657364],
+                {
+}
+            ).addTo(map_78a808317cb8642feaff0ca749ae6f1c);
+        
+    
+            var icon_7c7c8b42a46190587a53e9a5a41a586c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "triangle-exclamation",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_34002577adeade891bf80bc6a5535a29.setIcon(icon_7c7c8b42a46190587a53e9a5a41a586c);
+        
+    
+        var popup_a2dc6e6305b35600e7d7ed2db2849041 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a55bbfc6da13a05675d8d6f3d8dbbda0 = $(`<div id="html_a55bbfc6da13a05675d8d6f3d8dbbda0" style="width: 100.0%; height: 100.0%;">사고발생 위치: 경기도 파주시 문발동 650<br>사고발생일자: 2024-09-09 오전 00:00<br>클러스터: 2</div>`)[0];
+                popup_a2dc6e6305b35600e7d7ed2db2849041.setContent(html_a55bbfc6da13a05675d8d6f3d8dbbda0);
+            
+        
+
+        marker_34002577adeade891bf80bc6a5535a29.bindPopup(popup_a2dc6e6305b35600e7d7ed2db2849041)
+        ;
+
+        
+    
+    
+            var marker_5ccbf9bca171d269ed40364d421f3df9 = L.marker(
+                [37.7236834898, 126.6927150316],
+                {
+}
+            ).addTo(map_78a808317cb8642feaff0ca749ae6f1c);
+        
+    
+            var icon_db78fb1be02429d265e1891a358cb38a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "triangle-exclamation",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_5ccbf9bca171d269ed40364d421f3df9.setIcon(icon_db78fb1be02429d265e1891a358cb38a);
+        
+    
+        var popup_9dda66dcdbdd67534971cb02f70060d3 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_23097b395d0a0b8ab0df81e45742760c = $(`<div id="html_23097b395d0a0b8ab0df81e45742760c" style="width: 100.0%; height: 100.0%;">사고발생 위치: 경기도 파주시 문발동 667<br>사고발생일자: 2024-07-30 오전 00:00<br>클러스터: 2</div>`)[0];
+                popup_9dda66dcdbdd67534971cb02f70060d3.setContent(html_23097b395d0a0b8ab0df81e45742760c);
+            
+        
+
+        marker_5ccbf9bca171d269ed40364d421f3df9.bindPopup(popup_9dda66dcdbdd67534971cb02f70060d3)
+        ;
+
+        
+    
+    
+            var marker_58339635b74ed5f3838e332833e2c97b = L.marker(
+                [37.7240521079, 126.6924213297],
+                {
+}
+            ).addTo(map_78a808317cb8642feaff0ca749ae6f1c);
+        
+    
+            var icon_2fd1829e9c78df1bd4cbb8944b479b0a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "triangle-exclamation",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_58339635b74ed5f3838e332833e2c97b.setIcon(icon_2fd1829e9c78df1bd4cbb8944b479b0a);
+        
+    
+        var popup_1ec7ee622b5dae2a6b25cd84b418e56c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_48e764c4cdf9644ae5cc3b14e9f145d3 = $(`<div id="html_48e764c4cdf9644ae5cc3b14e9f145d3" style="width: 100.0%; height: 100.0%;">사고발생 위치: 경기도 파주시 문발동 650<br>사고발생일자: 2024-07-19 오전 00:00<br>클러스터: 2</div>`)[0];
+                popup_1ec7ee622b5dae2a6b25cd84b418e56c.setContent(html_48e764c4cdf9644ae5cc3b14e9f145d3);
+            
+        
+
+        marker_58339635b74ed5f3838e332833e2c97b.bindPopup(popup_1ec7ee622b5dae2a6b25cd84b418e56c)
+        ;
+
+        
+    
+    
+            var marker_e6d214ff74e97b7c26fef42512c65011 = L.marker(
+                [35.1510847239, 128.9820432035],
+                {
+}
+            ).addTo(map_78a808317cb8642feaff0ca749ae6f1c);
+        
+    
+            var icon_744180091e836ddebc189d6b82151b0b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "triangle-exclamation",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_e6d214ff74e97b7c26fef42512c65011.setIcon(icon_744180091e836ddebc189d6b82151b0b);
+        
+    
+        var popup_f8200b994795380eafac6ae2684af93c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_1c7f1c2a72f83b0970f02e8c3b3cc8e3 = $(`<div id="html_1c7f1c2a72f83b0970f02e8c3b3cc8e3" style="width: 100.0%; height: 100.0%;">사고발생 위치: 부산광역시 사상구 감전동 162-22<br>사고발생일자: 2024-05-05 오전 00:00<br>클러스터: 3</div>`)[0];
+                popup_f8200b994795380eafac6ae2684af93c.setContent(html_1c7f1c2a72f83b0970f02e8c3b3cc8e3);
+            
+        
+
+        marker_e6d214ff74e97b7c26fef42512c65011.bindPopup(popup_f8200b994795380eafac6ae2684af93c)
+        ;
+
+        
+    
+    
+            var marker_0718cb879c4397cda3b5c09c37f4af89 = L.marker(
+                [35.1509993758, 128.9821694839],
+                {
+}
+            ).addTo(map_78a808317cb8642feaff0ca749ae6f1c);
+        
+    
+            var icon_3e00d9c9b7b8a29bc76bb3c322510fb5 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "triangle-exclamation",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_0718cb879c4397cda3b5c09c37f4af89.setIcon(icon_3e00d9c9b7b8a29bc76bb3c322510fb5);
+        
+    
+        var popup_d27b06fdf185b4974b802aafa1c36c39 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_5299311787f0d8210cee50edc8e7e813 = $(`<div id="html_5299311787f0d8210cee50edc8e7e813" style="width: 100.0%; height: 100.0%;">사고발생 위치: 부산광역시 사상구 감전동 162-22<br>사고발생일자: 2024-04-30 오전 00:00<br>클러스터: 3</div>`)[0];
+                popup_d27b06fdf185b4974b802aafa1c36c39.setContent(html_5299311787f0d8210cee50edc8e7e813);
+            
+        
+
+        marker_0718cb879c4397cda3b5c09c37f4af89.bindPopup(popup_d27b06fdf185b4974b802aafa1c36c39)
+        ;
+
+        
+    
+    
+            var marker_1c8e75423937a3aab8e0569a89e5e24f = L.marker(
+                [35.1509317908, 128.9819158565],
+                {
+}
+            ).addTo(map_78a808317cb8642feaff0ca749ae6f1c);
+        
+    
+            var icon_24c8d34d4113696a6c2e21a1b25ff326 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "triangle-exclamation",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_1c8e75423937a3aab8e0569a89e5e24f.setIcon(icon_24c8d34d4113696a6c2e21a1b25ff326);
+        
+    
+        var popup_4edb887750d0e33b2e04c22897dd3f0a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_0e60547c97e7e4eb581243fcfc974fac = $(`<div id="html_0e60547c97e7e4eb581243fcfc974fac" style="width: 100.0%; height: 100.0%;">사고발생 위치: 부산광역시 사상구 감전동 163-11번지 인근<br>사고발생일자: 2024-08-21 오전 00:00<br>클러스터: 3</div>`)[0];
+                popup_4edb887750d0e33b2e04c22897dd3f0a.setContent(html_0e60547c97e7e4eb581243fcfc974fac);
+            
+        
+
+        marker_1c8e75423937a3aab8e0569a89e5e24f.bindPopup(popup_4edb887750d0e33b2e04c22897dd3f0a)
+        ;
+
+        
+    
+    
+            var marker_542161a2aaa1f9c96f5f74f6c581180b = L.marker(
+                [35.1519140412, 128.9821729916],
+                {
+}
+            ).addTo(map_78a808317cb8642feaff0ca749ae6f1c);
+        
+    
+            var icon_5d5123b2c420c753e66c614b3da60ec0 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "triangle-exclamation",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_542161a2aaa1f9c96f5f74f6c581180b.setIcon(icon_5d5123b2c420c753e66c614b3da60ec0);
+        
+    
+        var popup_b9de7865b072e719c22e9c9f704316f7 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_0ef09999407daae90b58cadef8b8c53f = $(`<div id="html_0ef09999407daae90b58cadef8b8c53f" style="width: 100.0%; height: 100.0%;">사고발생 위치: 부산광역시 사상구 감전동 163-6(새벽로 117 인근)<br>사고발생일자: 2024-07-24 오전 00:00<br>클러스터: 4</div>`)[0];
+                popup_b9de7865b072e719c22e9c9f704316f7.setContent(html_0ef09999407daae90b58cadef8b8c53f);
+            
+        
+
+        marker_542161a2aaa1f9c96f5f74f6c581180b.bindPopup(popup_b9de7865b072e719c22e9c9f704316f7)
+        ;
+
+        
+    
+    
+            var marker_750dc5b83066f6f39c2e848c74e8e1cd = L.marker(
+                [35.1520168624, 128.9823978711],
+                {
+}
+            ).addTo(map_78a808317cb8642feaff0ca749ae6f1c);
+        
+    
+            var icon_db7acb23a9849d33af251e6f67c857fb = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "triangle-exclamation",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_750dc5b83066f6f39c2e848c74e8e1cd.setIcon(icon_db7acb23a9849d33af251e6f67c857fb);
+        
+    
+        var popup_25a0af0d15f705430dfe842736a76bdd = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_7d232c40d82d2ac537800cc60307cb6f = $(`<div id="html_7d232c40d82d2ac537800cc60307cb6f" style="width: 100.0%; height: 100.0%;">사고발생 위치: 부산광역시 사상구 감전동 162-26(새벽로 122 인근)<br>사고발생일자: 2024-08-20 오전 00:00<br>클러스터: 4</div>`)[0];
+                popup_25a0af0d15f705430dfe842736a76bdd.setContent(html_7d232c40d82d2ac537800cc60307cb6f);
+            
+        
+
+        marker_750dc5b83066f6f39c2e848c74e8e1cd.bindPopup(popup_25a0af0d15f705430dfe842736a76bdd)
+        ;
+
+        
+    
+    
+            var marker_36984c98e01a145f5791a2c6ee458ced = L.marker(
+                [37.5039987003, 127.0924137956],
+                {
+}
+            ).addTo(map_78a808317cb8642feaff0ca749ae6f1c);
+        
+    
+            var icon_fdda38bd204b33fba7da4769be699596 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "triangle-exclamation",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_36984c98e01a145f5791a2c6ee458ced.setIcon(icon_fdda38bd204b33fba7da4769be699596);
+        
+    
+        var popup_6f815ceb3cd0ef41220d6cb4c14c9fc3 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_0edf9cb68a259033437b2f24dc50d014 = $(`<div id="html_0edf9cb68a259033437b2f24dc50d014" style="width: 100.0%; height: 100.0%;">사고발생 위치: 서울특별시 송파구 삼전동 100-7<br>사고발생일자: 2024-07-22 오전 00:00<br>클러스터: 5</div>`)[0];
+                popup_6f815ceb3cd0ef41220d6cb4c14c9fc3.setContent(html_0edf9cb68a259033437b2f24dc50d014);
+            
+        
+
+        marker_36984c98e01a145f5791a2c6ee458ced.bindPopup(popup_6f815ceb3cd0ef41220d6cb4c14c9fc3)
+        ;
+
+        
+    
+    
+            var marker_eb3310735c5496b45da60f67817ad3d0 = L.marker(
+                [37.5036191201, 127.0923557572],
+                {
+}
+            ).addTo(map_78a808317cb8642feaff0ca749ae6f1c);
+        
+    
+            var icon_c7c5e06ac80cbfaedee922457ef709a1 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "triangle-exclamation",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_eb3310735c5496b45da60f67817ad3d0.setIcon(icon_c7c5e06ac80cbfaedee922457ef709a1);
+        
+    
+        var popup_a9edf2072dfc5228e384ee853b75f4a1 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_9abce201ed2a412d86362e530af348ab = $(`<div id="html_9abce201ed2a412d86362e530af348ab" style="width: 100.0%; height: 100.0%;">사고발생 위치: 서울특별시 송파구 삼전동 100-7<br>사고발생일자: 2023-10-11 오전 00:00<br>클러스터: 5</div>`)[0];
+                popup_a9edf2072dfc5228e384ee853b75f4a1.setContent(html_9abce201ed2a412d86362e530af348ab);
+            
+        
+
+        marker_eb3310735c5496b45da60f67817ad3d0.bindPopup(popup_a9edf2072dfc5228e384ee853b75f4a1)
+        ;
+
+        
+    
+    
+            var marker_07b26cc23258345e2e89a28ef15f0dfc = L.marker(
+                [35.204724852, 129.0766961045],
+                {
+}
+            ).addTo(map_78a808317cb8642feaff0ca749ae6f1c);
+        
+    
+            var icon_af0659a0c8f0012d86ed73d09ae4d477 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "triangle-exclamation",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_07b26cc23258345e2e89a28ef15f0dfc.setIcon(icon_af0659a0c8f0012d86ed73d09ae4d477);
+        
+    
+        var popup_35a05e7513b2f725c87899cae6839b7f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_0efccafc11d11aa9620acb0dcc3b281a = $(`<div id="html_0efccafc11d11aa9620acb0dcc3b281a" style="width: 100.0%; height: 100.0%;">사고발생 위치: 부산광역시 동래구 온천동 1441-13번지<br>사고발생일자: 2023-12-27 오전 00:00<br>클러스터: 6</div>`)[0];
+                popup_35a05e7513b2f725c87899cae6839b7f.setContent(html_0efccafc11d11aa9620acb0dcc3b281a);
+            
+        
+
+        marker_07b26cc23258345e2e89a28ef15f0dfc.bindPopup(popup_35a05e7513b2f725c87899cae6839b7f)
+        ;
+
+        
+    
+    
+            var marker_099ff81089232eef12ef08279d10393e = L.marker(
+                [35.2047993672, 129.0767872996],
+                {
+}
+            ).addTo(map_78a808317cb8642feaff0ca749ae6f1c);
+        
+    
+            var icon_33fed0aadfc17e8a3593e1338393834b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "triangle-exclamation",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_099ff81089232eef12ef08279d10393e.setIcon(icon_33fed0aadfc17e8a3593e1338393834b);
+        
+    
+        var popup_d0b0475af58bda07a09a98bc79d3b92a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_02b3da20cd7c5634ff9b3bea62ca9a7a = $(`<div id="html_02b3da20cd7c5634ff9b3bea62ca9a7a" style="width: 100.0%; height: 100.0%;">사고발생 위치: 부산광역시 동래구 온천동 1441-13번지<br>사고발생일자: 2024-07-03 오전 00:00<br>클러스터: 6</div>`)[0];
+                popup_d0b0475af58bda07a09a98bc79d3b92a.setContent(html_02b3da20cd7c5634ff9b3bea62ca9a7a);
+            
+        
+
+        marker_099ff81089232eef12ef08279d10393e.bindPopup(popup_d0b0475af58bda07a09a98bc79d3b92a)
+        ;
+
+        
+    
+    
+            var marker_7d11d632ccfb0d377b3c8a75d9ff81a1 = L.marker(
+                [35.1752224502, 128.1179123428],
+                {
+}
+            ).addTo(map_78a808317cb8642feaff0ca749ae6f1c);
+        
+    
+            var icon_8ad6d0a26a3ebea9fb0bf70e96c31ec1 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "triangle-exclamation",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_7d11d632ccfb0d377b3c8a75d9ff81a1.setIcon(icon_8ad6d0a26a3ebea9fb0bf70e96c31ec1);
+        
+    
+        var popup_fc7b25402f678595677ab3e263e8a886 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_9c48c538fa9cdc4077ed63b268e37c3e = $(`<div id="html_9c48c538fa9cdc4077ed63b268e37c3e" style="width: 100.0%; height: 100.0%;">사고발생 위치: 경상남도 진주시 상평동 대신로168<br>사고발생일자: 2024-05-14 오전 00:00<br>클러스터: 7</div>`)[0];
+                popup_fc7b25402f678595677ab3e263e8a886.setContent(html_9c48c538fa9cdc4077ed63b268e37c3e);
+            
+        
+
+        marker_7d11d632ccfb0d377b3c8a75d9ff81a1.bindPopup(popup_fc7b25402f678595677ab3e263e8a886)
+        ;
+
+        
+    
+    
+            var marker_48cf7a023020b190e5d1b42c00e0122d = L.marker(
+                [35.175073733, 128.1179433834],
+                {
+}
+            ).addTo(map_78a808317cb8642feaff0ca749ae6f1c);
+        
+    
+            var icon_2bec8ebd6bdeff7c2813f5fbe7001c81 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "triangle-exclamation",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_48cf7a023020b190e5d1b42c00e0122d.setIcon(icon_2bec8ebd6bdeff7c2813f5fbe7001c81);
+        
+    
+        var popup_c5895acf23553138b9a5b2c08a526c26 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d76847005b71c0f76031cba352a86de9 = $(`<div id="html_d76847005b71c0f76031cba352a86de9" style="width: 100.0%; height: 100.0%;">사고발생 위치: 경상남도 진주시 상평동 상평동 155-27<br>사고발생일자: 2023-09-17 오전 00:00<br>클러스터: 7</div>`)[0];
+                popup_c5895acf23553138b9a5b2c08a526c26.setContent(html_d76847005b71c0f76031cba352a86de9);
+            
+        
+
+        marker_48cf7a023020b190e5d1b42c00e0122d.bindPopup(popup_c5895acf23553138b9a5b2c08a526c26)
+        ;
+
+        
+    
+    
+            var marker_a12ab974099595708b7c70f23d935e22 = L.marker(
+                [35.1752049108, 128.1179042962],
+                {
+}
+            ).addTo(map_78a808317cb8642feaff0ca749ae6f1c);
+        
+    
+            var icon_242b92f1476eda222bd609ba56342715 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "triangle-exclamation",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_a12ab974099595708b7c70f23d935e22.setIcon(icon_242b92f1476eda222bd609ba56342715);
+        
+    
+        var popup_cf7d639e85e354f073f1f35304d0cdc8 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_3ec7d4e51f8c49e07961c43d05992dc5 = $(`<div id="html_3ec7d4e51f8c49e07961c43d05992dc5" style="width: 100.0%; height: 100.0%;">사고발생 위치: 경상남도 진주시 상평동 상평동 155-29번지<br>사고발생일자: 2023-09-04 오전 00:00<br>클러스터: 7</div>`)[0];
+                popup_cf7d639e85e354f073f1f35304d0cdc8.setContent(html_3ec7d4e51f8c49e07961c43d05992dc5);
+            
+        
+
+        marker_a12ab974099595708b7c70f23d935e22.bindPopup(popup_cf7d639e85e354f073f1f35304d0cdc8)
+        ;
+
+        
+    
+    
+            var marker_212346e0e946b22e8f4be950f6f44d69 = L.marker(
+                [38.25346613, 128.5630043409],
+                {
+}
+            ).addTo(map_78a808317cb8642feaff0ca749ae6f1c);
+        
+    
+            var icon_ed6b6357c20b2b55fcb13af9745d69c2 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "triangle-exclamation",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_212346e0e946b22e8f4be950f6f44d69.setIcon(icon_ed6b6357c20b2b55fcb13af9745d69c2);
+        
+    
+        var popup_4af89a35f5751e695800edbd1cbd43ef = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_bc65acf1d01daa02e3cccd88fd2b3b1e = $(`<div id="html_bc65acf1d01daa02e3cccd88fd2b3b1e" style="width: 100.0%; height: 100.0%;">사고발생 위치: 강원특별자치도 고성군 토성면 봉포리 255-1<br>사고발생일자: 2024-01-08 오전 00:00<br>클러스터: 8</div>`)[0];
+                popup_4af89a35f5751e695800edbd1cbd43ef.setContent(html_bc65acf1d01daa02e3cccd88fd2b3b1e);
+            
+        
+
+        marker_212346e0e946b22e8f4be950f6f44d69.bindPopup(popup_4af89a35f5751e695800edbd1cbd43ef)
+        ;
+
+        
+    
+    
+            var marker_884cf2290aa3f724239b3df516113450 = L.marker(
+                [38.2534598111, 128.5630043409],
+                {
+}
+            ).addTo(map_78a808317cb8642feaff0ca749ae6f1c);
+        
+    
+            var icon_bfb17eb56a887925bad89863ad840666 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "triangle-exclamation",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_884cf2290aa3f724239b3df516113450.setIcon(icon_bfb17eb56a887925bad89863ad840666);
+        
+    
+        var popup_5d06a805c11f98d12378de63eaed42f1 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_bb204a8dd63d0511953ec5762877875f = $(`<div id="html_bb204a8dd63d0511953ec5762877875f" style="width: 100.0%; height: 100.0%;">사고발생 위치: 강원특별자치도 고성군 토성면 봉포리 255-1<br>사고발생일자: 2024-01-05 오전 00:00<br>클러스터: 8</div>`)[0];
+                popup_5d06a805c11f98d12378de63eaed42f1.setContent(html_bb204a8dd63d0511953ec5762877875f);
+            
+        
+
+        marker_884cf2290aa3f724239b3df516113450.bindPopup(popup_5d06a805c11f98d12378de63eaed42f1)
+        ;
+
+        
+    
+    
+            var marker_a4416d3ccfc3e79f1ab67f07172ff8e9 = L.marker(
+                [37.5263690047, 126.92619268],
+                {
+}
+            ).addTo(map_78a808317cb8642feaff0ca749ae6f1c);
+        
+    
+            var icon_d18f290e0c8d8000ba539876346fb14f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "triangle-exclamation",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_a4416d3ccfc3e79f1ab67f07172ff8e9.setIcon(icon_d18f290e0c8d8000ba539876346fb14f);
+        
+    
+        var popup_56f26f5437a6ee296863478f5349f5c7 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_1051abf406226a07eaaba76cfcf5bfc5 = $(`<div id="html_1051abf406226a07eaaba76cfcf5bfc5" style="width: 100.0%; height: 100.0%;">사고발생 위치: 서울특별시 영등포구 여의도동 22<br>사고발생일자: 2023-10-25 오전 00:00<br>클러스터: 9</div>`)[0];
+                popup_56f26f5437a6ee296863478f5349f5c7.setContent(html_1051abf406226a07eaaba76cfcf5bfc5);
+            
+        
+
+        marker_a4416d3ccfc3e79f1ab67f07172ff8e9.bindPopup(popup_56f26f5437a6ee296863478f5349f5c7)
+        ;
+
+        
+    
+    
+            var marker_3b8864f2d49924495539466321c06b00 = L.marker(
+                [37.5263900301, 126.9261755766],
+                {
+}
+            ).addTo(map_78a808317cb8642feaff0ca749ae6f1c);
+        
+    
+            var icon_dd2ffccf73854a34ebca9f3a696b787e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "triangle-exclamation",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_3b8864f2d49924495539466321c06b00.setIcon(icon_dd2ffccf73854a34ebca9f3a696b787e);
+        
+    
+        var popup_15a6680497bd789737969dab482209c1 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_5feb422ec4a374dd81015187716c366e = $(`<div id="html_5feb422ec4a374dd81015187716c366e" style="width: 100.0%; height: 100.0%;">사고발생 위치: 서울특별시 영등포구 여의도동 23(IFC몰)<br>사고발생일자: 2022-07-06 오전 00:00<br>클러스터: 9</div>`)[0];
+                popup_15a6680497bd789737969dab482209c1.setContent(html_5feb422ec4a374dd81015187716c366e);
+            
+        
+
+        marker_3b8864f2d49924495539466321c06b00.bindPopup(popup_15a6680497bd789737969dab482209c1)
+        ;
+
+        
+    
+    
+            var marker_f0fb49a353a23451dd7ee2563a26e977 = L.marker(
+                [37.4584199754, 128.0659660626],
+                {
+}
+            ).addTo(map_78a808317cb8642feaff0ca749ae6f1c);
+        
+    
+            var icon_c0caab5105f00689187db9652ea4df89 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "triangle-exclamation",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_f0fb49a353a23451dd7ee2563a26e977.setIcon(icon_c0caab5105f00689187db9652ea4df89);
+        
+    
+        var popup_ab21acd3413eec6cbfca47dec5421920 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_50c411b2c625e772d576651ad8cc11f5 = $(`<div id="html_50c411b2c625e772d576651ad8cc11f5" style="width: 100.0%; height: 100.0%;">사고발생 위치: 강원특별자치도 횡성군 우천면 우천면 우항리 759번지 스마일파크빌 앞 도시계획도로(소로2-201호)<br>사고발생일자: 2023-08-20 오전 00:00<br>클러스터: 10</div>`)[0];
+                popup_ab21acd3413eec6cbfca47dec5421920.setContent(html_50c411b2c625e772d576651ad8cc11f5);
+            
+        
+
+        marker_f0fb49a353a23451dd7ee2563a26e977.bindPopup(popup_ab21acd3413eec6cbfca47dec5421920)
+        ;
+
+        
+    
+    
+            var marker_855d63b92a5007fc6200a885f57e5f14 = L.marker(
+                [37.458194288, 128.0655422736],
+                {
+}
+            ).addTo(map_78a808317cb8642feaff0ca749ae6f1c);
+        
+    
+            var icon_67efbd537aaae8aa54138ae69b2e04d7 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "triangle-exclamation",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_855d63b92a5007fc6200a885f57e5f14.setIcon(icon_67efbd537aaae8aa54138ae69b2e04d7);
+        
+    
+        var popup_bd2f1578b0d0ca81e58ffbba9636953f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_16f530ad67c6c251369d7949189e2069 = $(`<div id="html_16f530ad67c6c251369d7949189e2069" style="width: 100.0%; height: 100.0%;">사고발생 위치: 강원특별자치도 횡성군 우천면 우천면 우항리 758번지 동산연립 앞 도시계획도로(소로3-205호)<br>사고발생일자: 2023-06-15 오전 00:00<br>클러스터: 10</div>`)[0];
+                popup_bd2f1578b0d0ca81e58ffbba9636953f.setContent(html_16f530ad67c6c251369d7949189e2069);
+            
+        
+
+        marker_855d63b92a5007fc6200a885f57e5f14.bindPopup(popup_bd2f1578b0d0ca81e58ffbba9636953f)
+        ;
+
+        
+    
+    
+            var marker_58c6e8942542f84ad391f68d0e99eb3c = L.marker(
+                [38.2174325396, 128.593896986],
+                {
+}
+            ).addTo(map_78a808317cb8642feaff0ca749ae6f1c);
+        
+    
+            var icon_38197096427daa173a663d5560f39ed6 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "triangle-exclamation",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_58c6e8942542f84ad391f68d0e99eb3c.setIcon(icon_38197096427daa173a663d5560f39ed6);
+        
+    
+        var popup_d3f21593d614b048ee8b513a96ea0b53 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d58bc53de017c4cb2e8ad0f83f2b772a = $(`<div id="html_d58bc53de017c4cb2e8ad0f83f2b772a" style="width: 100.0%; height: 100.0%;">사고발생 위치: 강원특별자치도 속초시 영랑동 148-38번지<br>사고발생일자: 2023-07-31 오전 00:00<br>클러스터: 11</div>`)[0];
+                popup_d3f21593d614b048ee8b513a96ea0b53.setContent(html_d58bc53de017c4cb2e8ad0f83f2b772a);
+            
+        
+
+        marker_58c6e8942542f84ad391f68d0e99eb3c.bindPopup(popup_d3f21593d614b048ee8b513a96ea0b53)
+        ;
+
+        
+    
+    
+            var marker_f92642f7a7982e5ad9ef1a8df9ece0e1 = L.marker(
+                [38.217491965, 128.5935469393],
+                {
+}
+            ).addTo(map_78a808317cb8642feaff0ca749ae6f1c);
+        
+    
+            var icon_05318d3c70842cd7194c7b6267abbe5e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "triangle-exclamation",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_f92642f7a7982e5ad9ef1a8df9ece0e1.setIcon(icon_05318d3c70842cd7194c7b6267abbe5e);
+        
+    
+        var popup_a08dbd014c4df5d93e64c84b516c35db = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_cffe7b57b57b65835aa3d4a1fd6b8416 = $(`<div id="html_cffe7b57b57b65835aa3d4a1fd6b8416" style="width: 100.0%; height: 100.0%;">사고발생 위치: 강원특별자치도 속초시 영랑동 148-38<br>사고발생일자: 2023-05-04 오전 00:00<br>클러스터: 11</div>`)[0];
+                popup_a08dbd014c4df5d93e64c84b516c35db.setContent(html_cffe7b57b57b65835aa3d4a1fd6b8416);
+            
+        
+
+        marker_f92642f7a7982e5ad9ef1a8df9ece0e1.bindPopup(popup_a08dbd014c4df5d93e64c84b516c35db)
+        ;
+
+        
+    
+    
+            var marker_27793dab0d69bf2a6485d30a7842fafc = L.marker(
+                [38.2173138957, 128.5937595044],
+                {
+}
+            ).addTo(map_78a808317cb8642feaff0ca749ae6f1c);
+        
+    
+            var icon_5ed19166d6cccfa1dadd0a7661e2232d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "triangle-exclamation",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_27793dab0d69bf2a6485d30a7842fafc.setIcon(icon_5ed19166d6cccfa1dadd0a7661e2232d);
+        
+    
+        var popup_477722206bce35b7c179197157b1160a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c416e568473ff5914b188210034cbd6e = $(`<div id="html_c416e568473ff5914b188210034cbd6e" style="width: 100.0%; height: 100.0%;">사고발생 위치: 강원특별자치도 속초시 영랑동 148-38<br>사고발생일자: 2023-06-28 오전 00:00<br>클러스터: 11</div>`)[0];
+                popup_477722206bce35b7c179197157b1160a.setContent(html_c416e568473ff5914b188210034cbd6e);
+            
+        
+
+        marker_27793dab0d69bf2a6485d30a7842fafc.bindPopup(popup_477722206bce35b7c179197157b1160a)
+        ;
+
+        
+    
+    
+            var marker_9ff9524ae27213bfaa5e203f7f1483f1 = L.marker(
+                [35.1967313508, 126.8060541933],
+                {
+}
+            ).addTo(map_78a808317cb8642feaff0ca749ae6f1c);
+        
+    
+            var icon_273ed6faacb0742fb96ce91373101ad4 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "triangle-exclamation",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_9ff9524ae27213bfaa5e203f7f1483f1.setIcon(icon_273ed6faacb0742fb96ce91373101ad4);
+        
+    
+        var popup_2c90f90835fd74a9cfa8d9faf141e9e4 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e6106606259eb85072e83fcd64628a84 = $(`<div id="html_e6106606259eb85072e83fcd64628a84" style="width: 100.0%; height: 100.0%;">사고발생 위치: 광주광역시 광산구 장덕동 972-7<br>사고발생일자: 2023-07-25 오전 00:00<br>클러스터: 12</div>`)[0];
+                popup_2c90f90835fd74a9cfa8d9faf141e9e4.setContent(html_e6106606259eb85072e83fcd64628a84);
+            
+        
+
+        marker_9ff9524ae27213bfaa5e203f7f1483f1.bindPopup(popup_2c90f90835fd74a9cfa8d9faf141e9e4)
+        ;
+
+        
+    
+    
+            var marker_e8432e9372b008ecd74095a1b1e21266 = L.marker(
+                [35.1966425401, 126.8056628531],
+                {
+}
+            ).addTo(map_78a808317cb8642feaff0ca749ae6f1c);
+        
+    
+            var icon_4fc92081fb1264eb85b41787aafea9d0 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "triangle-exclamation",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_e8432e9372b008ecd74095a1b1e21266.setIcon(icon_4fc92081fb1264eb85b41787aafea9d0);
+        
+    
+        var popup_c2046adc1ea625c11c7ecccfdafb0021 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_887e10fbd13fe7901038877982299ade = $(`<div id="html_887e10fbd13fe7901038877982299ade" style="width: 100.0%; height: 100.0%;">사고발생 위치: 광주광역시 광산구 장덕동 976-1<br>사고발생일자: 2023-07-25 오전 00:00<br>클러스터: 12</div>`)[0];
+                popup_c2046adc1ea625c11c7ecccfdafb0021.setContent(html_887e10fbd13fe7901038877982299ade);
+            
+        
+
+        marker_e8432e9372b008ecd74095a1b1e21266.bindPopup(popup_c2046adc1ea625c11c7ecccfdafb0021)
+        ;
+
+        
+    
+    
+            var marker_41f7aaf47462fe9fcad854ef2aa5affb = L.marker(
+                [35.1686598687, 126.8166501238],
+                {
+}
+            ).addTo(map_78a808317cb8642feaff0ca749ae6f1c);
+        
+    
+            var icon_83878f6073c5b1b1d833fac66f44eeb4 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "triangle-exclamation",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_41f7aaf47462fe9fcad854ef2aa5affb.setIcon(icon_83878f6073c5b1b1d833fac66f44eeb4);
+        
+    
+        var popup_ab2f9bf91bbda5de4038b03d5a63af7c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_2deb7b3bc3e1ced6ecd12612e3b3bd26 = $(`<div id="html_2deb7b3bc3e1ced6ecd12612e3b3bd26" style="width: 100.0%; height: 100.0%;">사고발생 위치: 광주광역시 광산구 월곡동 579-7<br>사고발생일자: 2023-06-30 오전 00:00<br>클러스터: 13</div>`)[0];
+                popup_ab2f9bf91bbda5de4038b03d5a63af7c.setContent(html_2deb7b3bc3e1ced6ecd12612e3b3bd26);
+            
+        
+
+        marker_41f7aaf47462fe9fcad854ef2aa5affb.bindPopup(popup_ab2f9bf91bbda5de4038b03d5a63af7c)
+        ;
+
+        
+    
+    
+            var marker_f58e9c66af276670da5ae8188629e190 = L.marker(
+                [35.1686861799, 126.8166608527],
+                {
+}
+            ).addTo(map_78a808317cb8642feaff0ca749ae6f1c);
+        
+    
+            var icon_d59789be549aee09ba928febafa0f1d9 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "triangle-exclamation",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_f58e9c66af276670da5ae8188629e190.setIcon(icon_d59789be549aee09ba928febafa0f1d9);
+        
+    
+        var popup_bbdcca3a94d7ca681176cbd2f6e24de8 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ba82df4aa800834c4ca5cc21e8f10f57 = $(`<div id="html_ba82df4aa800834c4ca5cc21e8f10f57" style="width: 100.0%; height: 100.0%;">사고발생 위치: 광주광역시 광산구 월곡동 579-7<br>사고발생일자: 2020-08-11 오전 00:00<br>클러스터: 13</div>`)[0];
+                popup_bbdcca3a94d7ca681176cbd2f6e24de8.setContent(html_ba82df4aa800834c4ca5cc21e8f10f57);
+            
+        
+
+        marker_f58e9c66af276670da5ae8188629e190.bindPopup(popup_bbdcca3a94d7ca681176cbd2f6e24de8)
+        ;
+
+        
+    
+    
+            var marker_8aade47638a1d24715c8c4d426bc6d1c = L.marker(
+                [35.1607722848, 126.9327911354],
+                {
+}
+            ).addTo(map_78a808317cb8642feaff0ca749ae6f1c);
+        
+    
+            var icon_7957236abced18297a212b2428fe2382 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "triangle-exclamation",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_8aade47638a1d24715c8c4d426bc6d1c.setIcon(icon_7957236abced18297a212b2428fe2382);
+        
+    
+        var popup_2485bbbb50b0f5099a8635203dd71328 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e985febba0b4ced0ee69bcab092a0580 = $(`<div id="html_e985febba0b4ced0ee69bcab092a0580" style="width: 100.0%; height: 100.0%;">사고발생 위치: 광주광역시 동구 산수동 133-1<br>사고발생일자: 2023-06-27 오전 00:00<br>클러스터: 14</div>`)[0];
+                popup_2485bbbb50b0f5099a8635203dd71328.setContent(html_e985febba0b4ced0ee69bcab092a0580);
+            
+        
+
+        marker_8aade47638a1d24715c8c4d426bc6d1c.bindPopup(popup_2485bbbb50b0f5099a8635203dd71328)
+        ;
+
+        
+    
+    
+            var marker_1096b19f5ae35db9f525603de5739bb6 = L.marker(
+                [35.1608573133, 126.9327999273],
+                {
+}
+            ).addTo(map_78a808317cb8642feaff0ca749ae6f1c);
+        
+    
+            var icon_721f70178e5d310e5147378eb69a6cfa = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "triangle-exclamation",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_1096b19f5ae35db9f525603de5739bb6.setIcon(icon_721f70178e5d310e5147378eb69a6cfa);
+        
+    
+        var popup_d4fc21af48d0df288487282195b8f244 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_eaf6f74e7e730bec4ae8c4cedf02fc7b = $(`<div id="html_eaf6f74e7e730bec4ae8c4cedf02fc7b" style="width: 100.0%; height: 100.0%;">사고발생 위치: 광주광역시 동구 갈마로 18<br>사고발생일자: 2021-05-21 오전 00:00<br>클러스터: 14</div>`)[0];
+                popup_d4fc21af48d0df288487282195b8f244.setContent(html_eaf6f74e7e730bec4ae8c4cedf02fc7b);
+            
+        
+
+        marker_1096b19f5ae35db9f525603de5739bb6.bindPopup(popup_d4fc21af48d0df288487282195b8f244)
+        ;
+
+        
+    
+    
+            var marker_676840ca75d1ebb279167f332f24352e = L.marker(
+                [35.1443619464, 126.9257840839],
+                {
+}
+            ).addTo(map_78a808317cb8642feaff0ca749ae6f1c);
+        
+    
+            var icon_7c8beb48f9fc713644b7b34964e18039 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "triangle-exclamation",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_676840ca75d1ebb279167f332f24352e.setIcon(icon_7c8beb48f9fc713644b7b34964e18039);
+        
+    
+        var popup_58f183b8e4fa42924b1806e42b37d0f9 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c62e68add4116b1ef0457d7c011e35e7 = $(`<div id="html_c62e68add4116b1ef0457d7c011e35e7" style="width: 100.0%; height: 100.0%;">사고발생 위치: 광주광역시 동구 서석동 421-1<br>사고발생일자: 2023-06-27 오전 00:00<br>클러스터: 15</div>`)[0];
+                popup_58f183b8e4fa42924b1806e42b37d0f9.setContent(html_c62e68add4116b1ef0457d7c011e35e7);
+            
+        
+
+        marker_676840ca75d1ebb279167f332f24352e.bindPopup(popup_58f183b8e4fa42924b1806e42b37d0f9)
+        ;
+
+        
+    
+    
+            var marker_fe2f08a5bcbb8e266f01985365c30630 = L.marker(
+                [35.1443575599, 126.9261381355],
+                {
+}
+            ).addTo(map_78a808317cb8642feaff0ca749ae6f1c);
+        
+    
+            var icon_1cd5d0fd7160d3ce3faeb049ccbbebd1 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "triangle-exclamation",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_fe2f08a5bcbb8e266f01985365c30630.setIcon(icon_1cd5d0fd7160d3ce3faeb049ccbbebd1);
+        
+    
+        var popup_d237169edeb983be2912771eea661827 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e518e19d5652529c7367d225ccd928b5 = $(`<div id="html_e518e19d5652529c7367d225ccd928b5" style="width: 100.0%; height: 100.0%;">사고발생 위치: 광주광역시 동구 서석동 421-1<br>사고발생일자: 2023-06-27 오전 00:00<br>클러스터: 15</div>`)[0];
+                popup_d237169edeb983be2912771eea661827.setContent(html_e518e19d5652529c7367d225ccd928b5);
+            
+        
+
+        marker_fe2f08a5bcbb8e266f01985365c30630.bindPopup(popup_d237169edeb983be2912771eea661827)
+        ;
+
+        
+    
+    
+            var marker_ebdc00faf2e5f53061222568e99aa37c = L.marker(
+                [37.3900054342, 126.7413891584],
+                {
+}
+            ).addTo(map_78a808317cb8642feaff0ca749ae6f1c);
+        
+    
+            var icon_3d336a0dc310f98c095233486b55ed80 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "triangle-exclamation",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_ebdc00faf2e5f53061222568e99aa37c.setIcon(icon_3d336a0dc310f98c095233486b55ed80);
+        
+    
+        var popup_3a177899b53b8721a3f7b0a18c635b3b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d5c7b3c0ad0b71b0b0c030ab90f2832c = $(`<div id="html_d5c7b3c0ad0b71b0b0c030ab90f2832c" style="width: 100.0%; height: 100.0%;">사고발생 위치: 경기도 시흥시 월곶동 1004-4번지 외 3필지<br>사고발생일자: 2023-06-18 오전 00:00<br>클러스터: 16</div>`)[0];
+                popup_3a177899b53b8721a3f7b0a18c635b3b.setContent(html_d5c7b3c0ad0b71b0b0c030ab90f2832c);
+            
+        
+
+        marker_ebdc00faf2e5f53061222568e99aa37c.bindPopup(popup_3a177899b53b8721a3f7b0a18c635b3b)
+        ;
+
+        
+    
+    
+            var marker_a998645beb3a3175f0ed65f4567165de = L.marker(
+                [37.3902217375, 126.7409807921],
+                {
+}
+            ).addTo(map_78a808317cb8642feaff0ca749ae6f1c);
+        
+    
+            var icon_f6683f9e8b8e465c01575a8d1258da01 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "triangle-exclamation",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_a998645beb3a3175f0ed65f4567165de.setIcon(icon_f6683f9e8b8e465c01575a8d1258da01);
+        
+    
+        var popup_d80b8dbe36cbe744bc889f530c56b857 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e47901845f25b2909f0bacc5ea2135c0 = $(`<div id="html_e47901845f25b2909f0bacc5ea2135c0" style="width: 100.0%; height: 100.0%;">사고발생 위치: 경기도 시흥시 월곶동 1004-5 인근<br>사고발생일자: 2023-06-13 오전 00:00<br>클러스터: 16</div>`)[0];
+                popup_d80b8dbe36cbe744bc889f530c56b857.setContent(html_e47901845f25b2909f0bacc5ea2135c0);
+            
+        
+
+        marker_a998645beb3a3175f0ed65f4567165de.bindPopup(popup_d80b8dbe36cbe744bc889f530c56b857)
+        ;
+
+        
+    
+    
+            var marker_5256fe358ca063e4268ae301a1367979 = L.marker(
+                [38.190093679, 128.6017893676],
+                {
+}
+            ).addTo(map_78a808317cb8642feaff0ca749ae6f1c);
+        
+    
+            var icon_0d09e8b4fd173e4c3f756d6e1bb39e96 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "triangle-exclamation",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_5256fe358ca063e4268ae301a1367979.setIcon(icon_0d09e8b4fd173e4c3f756d6e1bb39e96);
+        
+    
+        var popup_673c83011d9df6f95146e5c60d6fdc1f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d3e39376099f7ec97646bf7416d6e3de = $(`<div id="html_d3e39376099f7ec97646bf7416d6e3de" style="width: 100.0%; height: 100.0%;">사고발생 위치: 강원특별자치도 속초시 조양동 1452<br>사고발생일자: 2023-03-31 오전 00:00<br>클러스터: 17</div>`)[0];
+                popup_673c83011d9df6f95146e5c60d6fdc1f.setContent(html_d3e39376099f7ec97646bf7416d6e3de);
+            
+        
+
+        marker_5256fe358ca063e4268ae301a1367979.bindPopup(popup_673c83011d9df6f95146e5c60d6fdc1f)
+        ;
+
+        
+    
+    
+            var marker_9ab5e8ad3e7b30e6e4383240df457425 = L.marker(
+                [38.1901721845, 128.6012544124],
+                {
+}
+            ).addTo(map_78a808317cb8642feaff0ca749ae6f1c);
+        
+    
+            var icon_de65216b87bc6e819d3d203cd0ba9945 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "triangle-exclamation",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_9ab5e8ad3e7b30e6e4383240df457425.setIcon(icon_de65216b87bc6e819d3d203cd0ba9945);
+        
+    
+        var popup_ea437a147356c39772bb3aa4ca098452 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_715ab2a204871964192c2b2dcc7b36f1 = $(`<div id="html_715ab2a204871964192c2b2dcc7b36f1" style="width: 100.0%; height: 100.0%;">사고발생 위치: 강원특별자치도 속초시 조양동 1452<br>사고발생일자: 2022-08-13 오전 00:00<br>클러스터: 17</div>`)[0];
+                popup_ea437a147356c39772bb3aa4ca098452.setContent(html_715ab2a204871964192c2b2dcc7b36f1);
+            
+        
+
+        marker_9ab5e8ad3e7b30e6e4383240df457425.bindPopup(popup_ea437a147356c39772bb3aa4ca098452)
+        ;
+
+        
+    
+    
+            var marker_d38dadbe1b99cc1687669daa2f5e42aa = L.marker(
+                [35.1402158547, 126.8818711168],
+                {
+}
+            ).addTo(map_78a808317cb8642feaff0ca749ae6f1c);
+        
+    
+            var icon_3e11c5cc6c9f6ed2947cc88799e20daa = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "triangle-exclamation",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_d38dadbe1b99cc1687669daa2f5e42aa.setIcon(icon_3e11c5cc6c9f6ed2947cc88799e20daa);
+        
+    
+        var popup_a31629d590cee5446b919f39389cbda5 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_2988d924d84e8cf697d2d4cae886076b = $(`<div id="html_2988d924d84e8cf697d2d4cae886076b" style="width: 100.0%; height: 100.0%;">사고발생 위치: 광주광역시 서구 화정동 화정동1035<br>사고발생일자: 2023-03-14 오전 00:00<br>클러스터: 18</div>`)[0];
+                popup_a31629d590cee5446b919f39389cbda5.setContent(html_2988d924d84e8cf697d2d4cae886076b);
+            
+        
+
+        marker_d38dadbe1b99cc1687669daa2f5e42aa.bindPopup(popup_a31629d590cee5446b919f39389cbda5)
+        ;
+
+        
+    
+    
+            var marker_116765e82b14ba2ae5c29546cc610d84 = L.marker(
+                [35.1399530663, 126.8820641442],
+                {
+}
+            ).addTo(map_78a808317cb8642feaff0ca749ae6f1c);
+        
+    
+            var icon_6355675cec51247e8521f441975a7e45 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "triangle-exclamation",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_116765e82b14ba2ae5c29546cc610d84.setIcon(icon_6355675cec51247e8521f441975a7e45);
+        
+    
+        var popup_24e8d50901cd11ae04636c349c2d82e1 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_2993f2b2186930a5c8420cea8c517c1f = $(`<div id="html_2993f2b2186930a5c8420cea8c517c1f" style="width: 100.0%; height: 100.0%;">사고발생 위치: 광주광역시 서구 화정동 1020번지 주변<br>사고발생일자: 2021-05-22 오전 00:00<br>클러스터: 18</div>`)[0];
+                popup_24e8d50901cd11ae04636c349c2d82e1.setContent(html_2993f2b2186930a5c8420cea8c517c1f);
+            
+        
+
+        marker_116765e82b14ba2ae5c29546cc610d84.bindPopup(popup_24e8d50901cd11ae04636c349c2d82e1)
+        ;
+
+        
+    
+    
+            var marker_b381c204ad15263ac6ea503f7763661d = L.marker(
+                [37.7748496473, 128.9326435342],
+                {
+}
+            ).addTo(map_78a808317cb8642feaff0ca749ae6f1c);
+        
+    
+            var icon_ff82f62fe8d02e1647fa846d9b6ae5f1 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "triangle-exclamation",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_b381c204ad15263ac6ea503f7763661d.setIcon(icon_ff82f62fe8d02e1647fa846d9b6ae5f1);
+        
+    
+        var popup_6877ae7a2dda6659af7a3aa56e4859dd = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_00b22e4fd3f433ad19322500da9e699a = $(`<div id="html_00b22e4fd3f433ad19322500da9e699a" style="width: 100.0%; height: 100.0%;">사고발생 위치: 강원특별자치도 강릉시 송정동 송정동 187-4(팔송길 6 앞)<br>사고발생일자: 2021-06-08 오전 00:00<br>클러스터: 19</div>`)[0];
+                popup_6877ae7a2dda6659af7a3aa56e4859dd.setContent(html_00b22e4fd3f433ad19322500da9e699a);
+            
+        
+
+        marker_b381c204ad15263ac6ea503f7763661d.bindPopup(popup_6877ae7a2dda6659af7a3aa56e4859dd)
+        ;
+
+        
+    
+    
+            var marker_d9f528c2e289a49be974008add922509 = L.marker(
+                [37.7748051255, 128.9327716097],
+                {
+}
+            ).addTo(map_78a808317cb8642feaff0ca749ae6f1c);
+        
+    
+            var icon_bc583a5146d63f9d084d5e4b69224e57 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "triangle-exclamation",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_d9f528c2e289a49be974008add922509.setIcon(icon_bc583a5146d63f9d084d5e4b69224e57);
+        
+    
+        var popup_1bd76d80d0371d470439ba556d62b4a7 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_75d44f289cf47ab308fad95641148a2a = $(`<div id="html_75d44f289cf47ab308fad95641148a2a" style="width: 100.0%; height: 100.0%;">사고발생 위치: 강원특별자치도 강릉시 송정동 송정동 187-6<br>사고발생일자: 2020-08-06 오전 00:00<br>클러스터: 19</div>`)[0];
+                popup_1bd76d80d0371d470439ba556d62b4a7.setContent(html_75d44f289cf47ab308fad95641148a2a);
+            
+        
+
+        marker_d9f528c2e289a49be974008add922509.bindPopup(popup_1bd76d80d0371d470439ba556d62b4a7)
+        ;
+
+        
+    
+    
+            var marker_edcf4d9a28d294dc8e9e87e5709f14f8 = L.marker(
+                [37.7748256383, 128.9326486155],
+                {
+}
+            ).addTo(map_78a808317cb8642feaff0ca749ae6f1c);
+        
+    
+            var icon_e25a7eb08aaeb6db9e9e28b3d7d01acd = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "triangle-exclamation",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_edcf4d9a28d294dc8e9e87e5709f14f8.setIcon(icon_e25a7eb08aaeb6db9e9e28b3d7d01acd);
+        
+    
+        var popup_85b9d01c67a01f818b740dac6d7d28f1 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_8e3fd8e504aa23cb18a5ae54e753ebae = $(`<div id="html_8e3fd8e504aa23cb18a5ae54e753ebae" style="width: 100.0%; height: 100.0%;">사고발생 위치: 강원특별자치도 강릉시 송정동 187-4번지 일원<br>사고발생일자: 2023-02-27 오전 00:00<br>클러스터: 19</div>`)[0];
+                popup_85b9d01c67a01f818b740dac6d7d28f1.setContent(html_8e3fd8e504aa23cb18a5ae54e753ebae);
+            
+        
+
+        marker_edcf4d9a28d294dc8e9e87e5709f14f8.bindPopup(popup_85b9d01c67a01f818b740dac6d7d28f1)
+        ;
+
+        
+    
+    
+            var marker_daf142bb8302dd8e68f8fdbba2b4adb2 = L.marker(
+                [37.6441029318, 126.7882505769],
+                {
+}
+            ).addTo(map_78a808317cb8642feaff0ca749ae6f1c);
+        
+    
+            var icon_28feca760574ecd32a4c3939a6d55e2c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "triangle-exclamation",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_daf142bb8302dd8e68f8fdbba2b4adb2.setIcon(icon_28feca760574ecd32a4c3939a6d55e2c);
+        
+    
+        var popup_72c2603804b353f91bf232dcaae12e9a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_93d9f28c289b0307f92725b79ae57854 = $(`<div id="html_93d9f28c289b0307f92725b79ae57854" style="width: 100.0%; height: 100.0%;">사고발생 위치: 경기도 고양시 일산동구 백석동 1297<br>사고발생일자: 2022-06-06 오전 00:00<br>클러스터: 20</div>`)[0];
+                popup_72c2603804b353f91bf232dcaae12e9a.setContent(html_93d9f28c289b0307f92725b79ae57854);
+            
+        
+
+        marker_daf142bb8302dd8e68f8fdbba2b4adb2.bindPopup(popup_72c2603804b353f91bf232dcaae12e9a)
+        ;
+
+        
+    
+    
+            var marker_0bd30d2b7ea1b953c293cb79a0aa1bdc = L.marker(
+                [37.644013731, 126.7877946013],
+                {
+}
+            ).addTo(map_78a808317cb8642feaff0ca749ae6f1c);
+        
+    
+            var icon_b7c3dc58723512ea797b7b3eb796a017 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "triangle-exclamation",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_0bd30d2b7ea1b953c293cb79a0aa1bdc.setIcon(icon_b7c3dc58723512ea797b7b3eb796a017);
+        
+    
+        var popup_8cc7a7c997232ad94fb226097efbeb27 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ef14cac8773158387d47b2bc73cc32fc = $(`<div id="html_ef14cac8773158387d47b2bc73cc32fc" style="width: 100.0%; height: 100.0%;">사고발생 위치: 경기도 고양시 일산동구 백석동 1297<br>사고발생일자: 2022-06-09 오전 00:00<br>클러스터: 20</div>`)[0];
+                popup_8cc7a7c997232ad94fb226097efbeb27.setContent(html_ef14cac8773158387d47b2bc73cc32fc);
+            
+        
+
+        marker_0bd30d2b7ea1b953c293cb79a0aa1bdc.bindPopup(popup_8cc7a7c997232ad94fb226097efbeb27)
+        ;
+
+        
+    
+    
+            var marker_7abda3338fd5b4d60b2fa760d1ac1bca = L.marker(
+                [37.6440264982, 126.7883149193],
+                {
+}
+            ).addTo(map_78a808317cb8642feaff0ca749ae6f1c);
+        
+    
+            var icon_63485ec76ce8cc8b6cf8aaee87121182 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "triangle-exclamation",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_7abda3338fd5b4d60b2fa760d1ac1bca.setIcon(icon_63485ec76ce8cc8b6cf8aaee87121182);
+        
+    
+        var popup_a26720e959ce9600f3080a84d74a1c9f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ffe0a508ec4fa89dccbbc740301eacbc = $(`<div id="html_ffe0a508ec4fa89dccbbc740301eacbc" style="width: 100.0%; height: 100.0%;">사고발생 위치: 경기도 고양시 일산동구 백석동 1297<br>사고발생일자: 2022-10-05 오전 00:00<br>클러스터: 20</div>`)[0];
+                popup_a26720e959ce9600f3080a84d74a1c9f.setContent(html_ffe0a508ec4fa89dccbbc740301eacbc);
+            
+        
+
+        marker_7abda3338fd5b4d60b2fa760d1ac1bca.bindPopup(popup_a26720e959ce9600f3080a84d74a1c9f)
+        ;
+
+        
+    
+    
+            var marker_462581b37921fecd13bd5e412fe452a8 = L.marker(
+                [37.6439712545, 126.7880413645],
+                {
+}
+            ).addTo(map_78a808317cb8642feaff0ca749ae6f1c);
+        
+    
+            var icon_dc4f1f927c77e4d6e9cb34d9b2ce7d3b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "triangle-exclamation",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_462581b37921fecd13bd5e412fe452a8.setIcon(icon_dc4f1f927c77e4d6e9cb34d9b2ce7d3b);
+        
+    
+        var popup_8d64721fa31658c9af09e98192209eca = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_47514dfc81dad2c3173cc82ce35ce06c = $(`<div id="html_47514dfc81dad2c3173cc82ce35ce06c" style="width: 100.0%; height: 100.0%;">사고발생 위치: 경기도 고양시 일산동구 백석동 1297<br>사고발생일자: 2022-05-31 오전 00:00<br>클러스터: 20</div>`)[0];
+                popup_8d64721fa31658c9af09e98192209eca.setContent(html_47514dfc81dad2c3173cc82ce35ce06c);
+            
+        
+
+        marker_462581b37921fecd13bd5e412fe452a8.bindPopup(popup_8d64721fa31658c9af09e98192209eca)
+        ;
+
+        
+    
+    
+            var marker_6fdabfca4f21e091033f37196d7c1602 = L.marker(
+                [38.1174338362, 128.6318926006],
+                {
+}
+            ).addTo(map_78a808317cb8642feaff0ca749ae6f1c);
+        
+    
+            var icon_ed18f092957c377cedfe129c14a70933 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "triangle-exclamation",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_6fdabfca4f21e091033f37196d7c1602.setIcon(icon_ed18f092957c377cedfe129c14a70933);
+        
+    
+        var popup_c48e5cf858ec0d438915607c1b44c390 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_081f3b7d81aec735c098823546cfdcbb = $(`<div id="html_081f3b7d81aec735c098823546cfdcbb" style="width: 100.0%; height: 100.0%;">사고발생 위치: 강원특별자치도 양양군 강현면 주청리2-15번지  신축 공사장 인근<br>사고발생일자: 2022-05-06 오전 00:00<br>클러스터: 21</div>`)[0];
+                popup_c48e5cf858ec0d438915607c1b44c390.setContent(html_081f3b7d81aec735c098823546cfdcbb);
+            
+        
+
+        marker_6fdabfca4f21e091033f37196d7c1602.bindPopup(popup_c48e5cf858ec0d438915607c1b44c390)
+        ;
+
+        
+    
+    
+            var marker_a1c71c1896e384295514f0e4d8cb20ab = L.marker(
+                [38.1176330978, 128.6323529455],
+                {
+}
+            ).addTo(map_78a808317cb8642feaff0ca749ae6f1c);
+        
+    
+            var icon_1a17871d39427250edbd155d4b0ef4ba = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "triangle-exclamation",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_a1c71c1896e384295514f0e4d8cb20ab.setIcon(icon_1a17871d39427250edbd155d4b0ef4ba);
+        
+    
+        var popup_941f27a325e3076839e33dd68d554734 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_5ec254f57c3f81d11049fb6f4aad6c99 = $(`<div id="html_5ec254f57c3f81d11049fb6f4aad6c99" style="width: 100.0%; height: 100.0%;">사고발생 위치: 강원특별자치도 양양군 강현면 주청리 2-15<br>사고발생일자: 2022-08-03 오전 00:00<br>클러스터: 21</div>`)[0];
+                popup_941f27a325e3076839e33dd68d554734.setContent(html_5ec254f57c3f81d11049fb6f4aad6c99);
+            
+        
+
+        marker_a1c71c1896e384295514f0e4d8cb20ab.bindPopup(popup_941f27a325e3076839e33dd68d554734)
+        ;
+
+        
+    
+    
+            var marker_e1abd47d59128a85744286d396945a85 = L.marker(
+                [38.117451765, 128.6319266681],
+                {
+}
+            ).addTo(map_78a808317cb8642feaff0ca749ae6f1c);
+        
+    
+            var icon_b8c0b348d1433327b77bd60e1f2fa63f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "triangle-exclamation",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_e1abd47d59128a85744286d396945a85.setIcon(icon_b8c0b348d1433327b77bd60e1f2fa63f);
+        
+    
+        var popup_2f2014a31eda51f42f0ab3e2862c573a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_9ca1ac2551ec9a1eac6605e92748b3f2 = $(`<div id="html_9ca1ac2551ec9a1eac6605e92748b3f2" style="width: 100.0%; height: 100.0%;">사고발생 위치: 강원특별자치도 양양군 강현면 주청리 2-15<br>사고발생일자: 2022-08-24 오전 00:00<br>클러스터: 21</div>`)[0];
+                popup_2f2014a31eda51f42f0ab3e2862c573a.setContent(html_9ca1ac2551ec9a1eac6605e92748b3f2);
+            
+        
+
+        marker_e1abd47d59128a85744286d396945a85.bindPopup(popup_2f2014a31eda51f42f0ab3e2862c573a)
+        ;
+
+        
+    
+    
+            var marker_95a45d9ada34f513731f690aa0f150e0 = L.marker(
+                [35.7949244481, 127.1359219312],
+                {
+}
+            ).addTo(map_78a808317cb8642feaff0ca749ae6f1c);
+        
+    
+            var icon_8b99e9dd94427b284b7202cbae78d56c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "triangle-exclamation",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_95a45d9ada34f513731f690aa0f150e0.setIcon(icon_8b99e9dd94427b284b7202cbae78d56c);
+        
+    
+        var popup_b93a83c5658d311df1b7ff6ac978876b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d4d3140ad5c30b937508347e3019e214 = $(`<div id="html_d4d3140ad5c30b937508347e3019e214" style="width: 100.0%; height: 100.0%;">사고발생 위치: 전북특별자치도 전주시 완산구 평화동1가 725-5<br>사고발생일자: 2022-03-09 오전 00:00<br>클러스터: 22</div>`)[0];
+                popup_b93a83c5658d311df1b7ff6ac978876b.setContent(html_d4d3140ad5c30b937508347e3019e214);
+            
+        
+
+        marker_95a45d9ada34f513731f690aa0f150e0.bindPopup(popup_b93a83c5658d311df1b7ff6ac978876b)
+        ;
+
+        
+    
+    
+            var marker_0b22156f8db570608c915f86ac530674 = L.marker(
+                [35.7947429982, 127.1359621411],
+                {
+}
+            ).addTo(map_78a808317cb8642feaff0ca749ae6f1c);
+        
+    
+            var icon_a7a49a9d77634478dd4a1c7e7a3b03e6 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "triangle-exclamation",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_0b22156f8db570608c915f86ac530674.setIcon(icon_a7a49a9d77634478dd4a1c7e7a3b03e6);
+        
+    
+        var popup_b9984dd057cbaa2184885257165f88dd = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_07298066402e6eca842f1b3133e1ad5f = $(`<div id="html_07298066402e6eca842f1b3133e1ad5f" style="width: 100.0%; height: 100.0%;">사고발생 위치: 전북특별자치도 전주시 완산구 평화동1가 725-5<br>사고발생일자: 2022-08-15 오전 00:00<br>클러스터: 22</div>`)[0];
+                popup_b9984dd057cbaa2184885257165f88dd.setContent(html_07298066402e6eca842f1b3133e1ad5f);
+            
+        
+
+        marker_0b22156f8db570608c915f86ac530674.bindPopup(popup_b9984dd057cbaa2184885257165f88dd)
+        ;
+
+        
+    
+    
+            var marker_07de667690426bf3cbbf9dac9e843b17 = L.marker(
+                [35.7947604029, 127.1358924037],
+                {
+}
+            ).addTo(map_78a808317cb8642feaff0ca749ae6f1c);
+        
+    
+            var icon_17fd93aec23978949757a71e4bcc118a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "triangle-exclamation",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_07de667690426bf3cbbf9dac9e843b17.setIcon(icon_17fd93aec23978949757a71e4bcc118a);
+        
+    
+        var popup_25814c554045c04d90b1ccf9c9c613ac = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_5f91800232755fc3dc7be575e01eaa03 = $(`<div id="html_5f91800232755fc3dc7be575e01eaa03" style="width: 100.0%; height: 100.0%;">사고발생 위치: 전북특별자치도 전주시 완산구 평화동1가 725-5<br>사고발생일자: 2022-08-16 오전 00:00<br>클러스터: 22</div>`)[0];
+                popup_25814c554045c04d90b1ccf9c9c613ac.setContent(html_5f91800232755fc3dc7be575e01eaa03);
+            
+        
+
+        marker_07de667690426bf3cbbf9dac9e843b17.bindPopup(popup_25814c554045c04d90b1ccf9c9c613ac)
+        ;
+
+        
+    
+    
+            var marker_f5142e03d594b202b4698116d2a82775 = L.marker(
+                [35.7948983411, 127.13593266],
+                {
+}
+            ).addTo(map_78a808317cb8642feaff0ca749ae6f1c);
+        
+    
+            var icon_e0002a6d1d9ac2083c642bee2042aa44 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "triangle-exclamation",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_f5142e03d594b202b4698116d2a82775.setIcon(icon_e0002a6d1d9ac2083c642bee2042aa44);
+        
+    
+        var popup_32e0a11e9167336069b9db46ab205092 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_68eb57caea5a28aef7bea42ab70043f6 = $(`<div id="html_68eb57caea5a28aef7bea42ab70043f6" style="width: 100.0%; height: 100.0%;">사고발생 위치: 전북특별자치도 전주시 완산구 평화동1가 725-5<br>사고발생일자: 2022-06-24 오전 00:00<br>클러스터: 22</div>`)[0];
+                popup_32e0a11e9167336069b9db46ab205092.setContent(html_68eb57caea5a28aef7bea42ab70043f6);
+            
+        
+
+        marker_f5142e03d594b202b4698116d2a82775.bindPopup(popup_32e0a11e9167336069b9db46ab205092)
+        ;
+
+        
+    
+    
+            var marker_71ce42d3dd0f32c0454e210ca854f26a = L.marker(
+                [35.9419920082, 126.5313111797],
+                {
+}
+            ).addTo(map_78a808317cb8642feaff0ca749ae6f1c);
+        
+    
+            var icon_f0ae81612ab052141e66556629d4722e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "triangle-exclamation",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_71ce42d3dd0f32c0454e210ca854f26a.setIcon(icon_f0ae81612ab052141e66556629d4722e);
+        
+    
+        var popup_559955e51b9ca8661845a0dcc23c8781 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_bda92e135179e2957646b1d4f5913eaa = $(`<div id="html_bda92e135179e2957646b1d4f5913eaa" style="width: 100.0%; height: 100.0%;">사고발생 위치: 전북특별자치도 군산시 비응도동 41-4<br>사고발생일자: 2022-06-30 오전 00:00<br>클러스터: 23</div>`)[0];
+                popup_559955e51b9ca8661845a0dcc23c8781.setContent(html_bda92e135179e2957646b1d4f5913eaa);
+            
+        
+
+        marker_71ce42d3dd0f32c0454e210ca854f26a.bindPopup(popup_559955e51b9ca8661845a0dcc23c8781)
+        ;
+
+        
+    
+    
+            var marker_7b17c92bddeec8e3839c15a0204fde92 = L.marker(
+                [35.9419540614, 126.5312731801],
+                {
+}
+            ).addTo(map_78a808317cb8642feaff0ca749ae6f1c);
+        
+    
+            var icon_93251bbb0e9bc0ee6a37cc1c861e1b2c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "triangle-exclamation",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_7b17c92bddeec8e3839c15a0204fde92.setIcon(icon_93251bbb0e9bc0ee6a37cc1c861e1b2c);
+        
+    
+        var popup_4fba7a9319227bd4595ffc83d6fc21de = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a26c312fcfdc7496df25270a0ac9c224 = $(`<div id="html_a26c312fcfdc7496df25270a0ac9c224" style="width: 100.0%; height: 100.0%;">사고발생 위치: 전북특별자치도 군산시 비응도동 42(43-1 앞)<br>사고발생일자: 2020-09-15 오전 00:00<br>클러스터: 23</div>`)[0];
+                popup_4fba7a9319227bd4595ffc83d6fc21de.setContent(html_a26c312fcfdc7496df25270a0ac9c224);
+            
+        
+
+        marker_7b17c92bddeec8e3839c15a0204fde92.bindPopup(popup_4fba7a9319227bd4595ffc83d6fc21de)
+        ;
+
+        
+    
+    
+            var marker_51218b2216ca955bc313d1d8cf98a00f = L.marker(
+                [35.1634352379, 126.9243911688],
+                {
+}
+            ).addTo(map_78a808317cb8642feaff0ca749ae6f1c);
+        
+    
+            var icon_b61b78b231c726be9686442e81db5e91 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "triangle-exclamation",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_51218b2216ca955bc313d1d8cf98a00f.setIcon(icon_b61b78b231c726be9686442e81db5e91);
+        
+    
+        var popup_8285d583df4163bc77132bf272698275 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_310376027e9c64ad7560e045d359356a = $(`<div id="html_310376027e9c64ad7560e045d359356a" style="width: 100.0%; height: 100.0%;">사고발생 위치: 광주광역시 동구 계림동 계림동 1072<br>사고발생일자: 2021-07-06 오전 00:00<br>클러스터: 24</div>`)[0];
+                popup_8285d583df4163bc77132bf272698275.setContent(html_310376027e9c64ad7560e045d359356a);
+            
+        
+
+        marker_51218b2216ca955bc313d1d8cf98a00f.bindPopup(popup_8285d583df4163bc77132bf272698275)
+        ;
+
+        
+    
+    
+            var marker_38c029cac82b23108e7430732bc60cf4 = L.marker(
+                [35.163555999, 126.9242172591],
+                {
+}
+            ).addTo(map_78a808317cb8642feaff0ca749ae6f1c);
+        
+    
+            var icon_e9d192161f9f8030e9001b304eba2305 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "triangle-exclamation",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_38c029cac82b23108e7430732bc60cf4.setIcon(icon_e9d192161f9f8030e9001b304eba2305);
+        
+    
+        var popup_e2f167d2da5523d6cddf1f880f5f676d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_660722319c22ac087e7bcf722968e505 = $(`<div id="html_660722319c22ac087e7bcf722968e505" style="width: 100.0%; height: 100.0%;">사고발생 위치: 광주광역시 동구 계림동 1070<br>사고발생일자: 2020-08-08 오전 00:00<br>클러스터: 24</div>`)[0];
+                popup_e2f167d2da5523d6cddf1f880f5f676d.setContent(html_660722319c22ac087e7bcf722968e505);
+            
+        
+
+        marker_38c029cac82b23108e7430732bc60cf4.bindPopup(popup_e2f167d2da5523d6cddf1f880f5f676d)
+        ;
+
+        
+    
+    
+            var marker_825cd4c6db01e80bee7bf26dfa5b1740 = L.marker(
+                [35.9974307979, 129.389134004],
+                {
+}
+            ).addTo(map_78a808317cb8642feaff0ca749ae6f1c);
+        
+    
+            var icon_ca65234b47a4d9bf3e46ae7ea2ec548b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "triangle-exclamation",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_825cd4c6db01e80bee7bf26dfa5b1740.setIcon(icon_ca65234b47a4d9bf3e46ae7ea2ec548b);
+        
+    
+        var popup_fd609070cca2c124fb0e2bdd578fbbd9 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_8755624cde96dba8cbf216f2a5d74602 = $(`<div id="html_8755624cde96dba8cbf216f2a5d74602" style="width: 100.0%; height: 100.0%;">사고발생 위치: 경상북도 포항시 남구 동촌동 543-67<br>사고발생일자: 2021-04-02 오전 00:00<br>클러스터: 25</div>`)[0];
+                popup_fd609070cca2c124fb0e2bdd578fbbd9.setContent(html_8755624cde96dba8cbf216f2a5d74602);
+            
+        
+
+        marker_825cd4c6db01e80bee7bf26dfa5b1740.bindPopup(popup_fd609070cca2c124fb0e2bdd578fbbd9)
+        ;
+
+        
+    
+    
+            var marker_b2dda94f350a401e35d5feb97fd6306f = L.marker(
+                [35.997274556, 129.3889784359],
+                {
+}
+            ).addTo(map_78a808317cb8642feaff0ca749ae6f1c);
+        
+    
+            var icon_3f4bf49dd4f2fdc4068290467fe40a5f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "triangle-exclamation",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_b2dda94f350a401e35d5feb97fd6306f.setIcon(icon_3f4bf49dd4f2fdc4068290467fe40a5f);
+        
+    
+        var popup_2c0ade0c338fcd11b8381e557b7961c3 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_2baf02ffe641107ec3c9b8fefa43e637 = $(`<div id="html_2baf02ffe641107ec3c9b8fefa43e637" style="width: 100.0%; height: 100.0%;">사고발생 위치: 경상북도 포항시 남구 동촌동 545-6<br>사고발생일자: 2021-04-02 오전 00:00<br>클러스터: 25</div>`)[0];
+                popup_2c0ade0c338fcd11b8381e557b7961c3.setContent(html_2baf02ffe641107ec3c9b8fefa43e637);
+            
+        
+
+        marker_b2dda94f350a401e35d5feb97fd6306f.bindPopup(popup_2c0ade0c338fcd11b8381e557b7961c3)
+        ;
+
+        
+    
+    
+            var marker_77f7d5de3f999b03892fdf84a9c636be = L.marker(
+                [36.0011935286, 129.3842631125],
+                {
+}
+            ).addTo(map_78a808317cb8642feaff0ca749ae6f1c);
+        
+    
+            var icon_fff458788c6030410f02e239aa50f536 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "triangle-exclamation",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_77f7d5de3f999b03892fdf84a9c636be.setIcon(icon_fff458788c6030410f02e239aa50f536);
+        
+    
+        var popup_2f065b1135a855534ed1fa9d4f11b5c4 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_0f8b9510e71956de6ad80d9384ee302d = $(`<div id="html_0f8b9510e71956de6ad80d9384ee302d" style="width: 100.0%; height: 100.0%;">사고발생 위치: 경상북도 포항시 남구 동촌동 800-3<br>사고발생일자: 2021-04-02 오전 00:00<br>클러스터: 26</div>`)[0];
+                popup_2f065b1135a855534ed1fa9d4f11b5c4.setContent(html_0f8b9510e71956de6ad80d9384ee302d);
+            
+        
+
+        marker_77f7d5de3f999b03892fdf84a9c636be.bindPopup(popup_2f065b1135a855534ed1fa9d4f11b5c4)
+        ;
+
+        
+    
+    
+            var marker_d12957f59187a279961bfe65a7c04516 = L.marker(
+                [36.0013497627, 129.3841129088],
+                {
+}
+            ).addTo(map_78a808317cb8642feaff0ca749ae6f1c);
+        
+    
+            var icon_b8bf2186df1004cd3dac1f4e62e7f868 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "triangle-exclamation",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_d12957f59187a279961bfe65a7c04516.setIcon(icon_b8bf2186df1004cd3dac1f4e62e7f868);
+        
+    
+        var popup_5ee406d9b6802c592276f9434bfbcc38 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_3c529347eb9d347b1cae213466df9f8c = $(`<div id="html_3c529347eb9d347b1cae213466df9f8c" style="width: 100.0%; height: 100.0%;">사고발생 위치: 경상북도 포항시 남구 동촌동 800-3<br>사고발생일자: 2021-04-02 오전 00:00<br>클러스터: 26</div>`)[0];
+                popup_5ee406d9b6802c592276f9434bfbcc38.setContent(html_3c529347eb9d347b1cae213466df9f8c);
+            
+        
+
+        marker_d12957f59187a279961bfe65a7c04516.bindPopup(popup_5ee406d9b6802c592276f9434bfbcc38)
+        ;
+
+        
+    
+    
+            var marker_6e30aad5dd3a1f98c7d22ada5a528fd7 = L.marker(
+                [35.1708421788, 126.8822775721],
+                {
+}
+            ).addTo(map_78a808317cb8642feaff0ca749ae6f1c);
+        
+    
+            var icon_bcedfffd48c107f9b41789d320d93599 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "triangle-exclamation",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_6e30aad5dd3a1f98c7d22ada5a528fd7.setIcon(icon_bcedfffd48c107f9b41789d320d93599);
+        
+    
+        var popup_b7f58c518b2b4d650b00a64eb2adf286 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b07b182338871da53244ccb138196eca = $(`<div id="html_b07b182338871da53244ccb138196eca" style="width: 100.0%; height: 100.0%;">사고발생 위치: 광주광역시 북구 운암동 1578<br>사고발생일자: 2020-08-19 오전 00:00<br>클러스터: 27</div>`)[0];
+                popup_b7f58c518b2b4d650b00a64eb2adf286.setContent(html_b07b182338871da53244ccb138196eca);
+            
+        
+
+        marker_6e30aad5dd3a1f98c7d22ada5a528fd7.bindPopup(popup_b7f58c518b2b4d650b00a64eb2adf286)
+        ;
+
+        
+    
+    
+            var marker_065d20be0018594dfd736c4a9904768f = L.marker(
+                [35.1708013279, 126.8825790638],
+                {
+}
+            ).addTo(map_78a808317cb8642feaff0ca749ae6f1c);
+        
+    
+            var icon_161214360522b5bb4af37937acb2272c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "triangle-exclamation",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_065d20be0018594dfd736c4a9904768f.setIcon(icon_161214360522b5bb4af37937acb2272c);
+        
+    
+        var popup_380aad9749f10fd60534617d38271f6d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_5c09481d6d1aa5f8850b27fb3c462718 = $(`<div id="html_5c09481d6d1aa5f8850b27fb3c462718" style="width: 100.0%; height: 100.0%;">사고발생 위치: 광주광역시 북구 동림동 26-1<br>사고발생일자: 2020-08-21 오전 00:00<br>클러스터: 27</div>`)[0];
+                popup_380aad9749f10fd60534617d38271f6d.setContent(html_5c09481d6d1aa5f8850b27fb3c462718);
+            
+        
+
+        marker_065d20be0018594dfd736c4a9904768f.bindPopup(popup_380aad9749f10fd60534617d38271f6d)
+        ;
+
+        
+    
+    
+            var marker_0960c16111f7489aa134661a24579b06 = L.marker(
+                [36.6337676899, 127.4643603543],
+                {
+}
+            ).addTo(map_78a808317cb8642feaff0ca749ae6f1c);
+        
+    
+            var icon_1ac2149d264351cc3c2955c737b44df2 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "triangle-exclamation",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_0960c16111f7489aa134661a24579b06.setIcon(icon_1ac2149d264351cc3c2955c737b44df2);
+        
+    
+        var popup_cc7c0d9e811c3b2c8a5befd276e425da = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_019523e5084a9a617468ffc030d769e0 = $(`<div id="html_019523e5084a9a617468ffc030d769e0" style="width: 100.0%; height: 100.0%;">사고발생 위치: 충청북도 청주시 서원구 사창동 265-3<br>사고발생일자: 2020-08-13 오전 00:00<br>클러스터: 28</div>`)[0];
+                popup_cc7c0d9e811c3b2c8a5befd276e425da.setContent(html_019523e5084a9a617468ffc030d769e0);
+            
+        
+
+        marker_0960c16111f7489aa134661a24579b06.bindPopup(popup_cc7c0d9e811c3b2c8a5befd276e425da)
+        ;
+
+        
+    
+    
+            var marker_6a6d006654ac9b56f7df4a284f5760bd = L.marker(
+                [36.6336514854, 127.4643646297],
+                {
+}
+            ).addTo(map_78a808317cb8642feaff0ca749ae6f1c);
+        
+    
+            var icon_4a43159dd9924229742ac7236f97633d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "triangle-exclamation",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_6a6d006654ac9b56f7df4a284f5760bd.setIcon(icon_4a43159dd9924229742ac7236f97633d);
+        
+    
+        var popup_86336b8d63513e5bcb3148ff79b9718e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_7ba6876b4013339d6a003580a3c505b9 = $(`<div id="html_7ba6876b4013339d6a003580a3c505b9" style="width: 100.0%; height: 100.0%;">사고발생 위치: 충청북도 청주시 서원구 사창동 265-5<br>사고발생일자: 2020-08-13 오전 00:00<br>클러스터: 28</div>`)[0];
+                popup_86336b8d63513e5bcb3148ff79b9718e.setContent(html_7ba6876b4013339d6a003580a3c505b9);
+            
+        
+
+        marker_6a6d006654ac9b56f7df4a284f5760bd.bindPopup(popup_86336b8d63513e5bcb3148ff79b9718e)
+        ;
+
+        
+    
+    
+            var marker_4b8ee8bce80ee0d287db1455fd8b83cf = L.marker(
+                [37.4899779928, 126.6751367769],
+                {
+}
+            ).addTo(map_78a808317cb8642feaff0ca749ae6f1c);
+        
+    
+            var icon_674a0694096c801e0761dedcda5b86cb = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "triangle-exclamation",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_4b8ee8bce80ee0d287db1455fd8b83cf.setIcon(icon_674a0694096c801e0761dedcda5b86cb);
+        
+    
+        var popup_9a09d24215698d14d40a0bd5be0602ae = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b999ed06515ce84a60c51d9b95266bd2 = $(`<div id="html_b999ed06515ce84a60c51d9b95266bd2" style="width: 100.0%; height: 100.0%;">사고발생 위치: 인천광역시 서구 가좌동 가좌역2번출입구 E/V옆 전방 도로<br>사고발생일자: 2020-08-13 오전 00:00<br>클러스터: 29</div>`)[0];
+                popup_9a09d24215698d14d40a0bd5be0602ae.setContent(html_b999ed06515ce84a60c51d9b95266bd2);
+            
+        
+
+        marker_4b8ee8bce80ee0d287db1455fd8b83cf.bindPopup(popup_9a09d24215698d14d40a0bd5be0602ae)
+        ;
+
+        
+    
+    
+            var marker_8025a0b1b4aec639ca4b48cc4fab65a6 = L.marker(
+                [37.4899024408, 126.6750656984],
+                {
+}
+            ).addTo(map_78a808317cb8642feaff0ca749ae6f1c);
+        
+    
+            var icon_b8bbd52ed579e3cb1d1b281d156c4eab = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "triangle-exclamation",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_8025a0b1b4aec639ca4b48cc4fab65a6.setIcon(icon_b8bbd52ed579e3cb1d1b281d156c4eab);
+        
+    
+        var popup_6bd0e9d0c2c990522aba9794f089c4cb = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ad42b0d5397c0add0cd1eff4f7cdabef = $(`<div id="html_ad42b0d5397c0add0cd1eff4f7cdabef" style="width: 100.0%; height: 100.0%;">사고발생 위치: 인천광역시 서구 가좌동 가좌역2번출입구 E/V 옆 환기구 전면 보도<br>사고발생일자: 2020-08-13 오전 00:00<br>클러스터: 29</div>`)[0];
+                popup_6bd0e9d0c2c990522aba9794f089c4cb.setContent(html_ad42b0d5397c0add0cd1eff4f7cdabef);
+            
+        
+
+        marker_8025a0b1b4aec639ca4b48cc4fab65a6.bindPopup(popup_6bd0e9d0c2c990522aba9794f089c4cb)
+        ;
+
+        
+    
+    
+            var marker_a8354e92e2d1b540e94e2da59e282926 = L.marker(
+                [37.5408787006, 127.2034245202],
+                {
+}
+            ).addTo(map_78a808317cb8642feaff0ca749ae6f1c);
+        
+    
+            var icon_d6366109948d5d3fc5bc95483f08a15d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "triangle-exclamation",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_a8354e92e2d1b540e94e2da59e282926.setIcon(icon_d6366109948d5d3fc5bc95483f08a15d);
+        
+    
+        var popup_2b199b820242e8dc4db6316f603a418b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_65682fb74be5a267a878f846a73f8f65 = $(`<div id="html_65682fb74be5a267a878f846a73f8f65" style="width: 100.0%; height: 100.0%;">사고발생 위치: 경기도 하남시 덕풍동 401-11번지<br>사고발생일자: 2020-08-13 오전 00:00<br>클러스터: 30</div>`)[0];
+                popup_2b199b820242e8dc4db6316f603a418b.setContent(html_65682fb74be5a267a878f846a73f8f65);
+            
+        
+
+        marker_a8354e92e2d1b540e94e2da59e282926.bindPopup(popup_2b199b820242e8dc4db6316f603a418b)
+        ;
+
+        
+    
+    
+            var marker_d04fdfd127c5acc7ba9b0f3be81a1d32 = L.marker(
+                [37.5408979165, 127.203031213],
+                {
+}
+            ).addTo(map_78a808317cb8642feaff0ca749ae6f1c);
+        
+    
+            var icon_85d94f23e7a044847450715c3b2fbfd1 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "triangle-exclamation",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_d04fdfd127c5acc7ba9b0f3be81a1d32.setIcon(icon_85d94f23e7a044847450715c3b2fbfd1);
+        
+    
+        var popup_01962285f8d4837209ce8da8c4ce5ae9 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_44f0554305cabe22902018fe602c44ee = $(`<div id="html_44f0554305cabe22902018fe602c44ee" style="width: 100.0%; height: 100.0%;">사고발생 위치: 경기도 하남시 덕풍동 396-1번지<br>사고발생일자: 2020-08-10 오전 00:00<br>클러스터: 30</div>`)[0];
+                popup_01962285f8d4837209ce8da8c4ce5ae9.setContent(html_44f0554305cabe22902018fe602c44ee);
+            
+        
+
+        marker_d04fdfd127c5acc7ba9b0f3be81a1d32.bindPopup(popup_01962285f8d4837209ce8da8c4ce5ae9)
+        ;
+
+        
+    
+    
+            var marker_12e634ac562fa2618723a1cbf7b314c6 = L.marker(
+                [37.3533037421, 126.6195394998],
+                {
+}
+            ).addTo(map_78a808317cb8642feaff0ca749ae6f1c);
+        
+    
+            var icon_e32229000ff43bbaeaf8cd79174181b4 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "triangle-exclamation",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_12e634ac562fa2618723a1cbf7b314c6.setIcon(icon_e32229000ff43bbaeaf8cd79174181b4);
+        
+    
+        var popup_c6984f4bb7c473207722f1bc501ba710 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_4c97baf249541c9e03f2dcbc0076a574 = $(`<div id="html_4c97baf249541c9e03f2dcbc0076a574" style="width: 100.0%; height: 100.0%;">사고발생 위치: 인천광역시 연수구 송도동 신항대로 892번길 50<br>사고발생일자: 2020-08-11 오전 00:00<br>클러스터: 31</div>`)[0];
+                popup_c6984f4bb7c473207722f1bc501ba710.setContent(html_4c97baf249541c9e03f2dcbc0076a574);
+            
+        
+
+        marker_12e634ac562fa2618723a1cbf7b314c6.bindPopup(popup_c6984f4bb7c473207722f1bc501ba710)
+        ;
+
+        
+    
+    
+            var marker_e5a1cc85e43b9a047033ae19dbce0e18 = L.marker(
+                [37.3532667576, 126.6195405769],
+                {
+}
+            ).addTo(map_78a808317cb8642feaff0ca749ae6f1c);
+        
+    
+            var icon_cca39b722d7f1e26d06b64158ecd3442 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "triangle-exclamation",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_e5a1cc85e43b9a047033ae19dbce0e18.setIcon(icon_cca39b722d7f1e26d06b64158ecd3442);
+        
+    
+        var popup_53f4da6fa7f4b6c7bd9b8299ffd399cf = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_21b4de2e78ceeaa655b41b452f6b5137 = $(`<div id="html_21b4de2e78ceeaa655b41b452f6b5137" style="width: 100.0%; height: 100.0%;">사고발생 위치: 인천광역시 연수구 송도동 신항대로 892번길 50<br>사고발생일자: 2020-08-09 오전 00:00<br>클러스터: 31</div>`)[0];
+                popup_53f4da6fa7f4b6c7bd9b8299ffd399cf.setContent(html_21b4de2e78ceeaa655b41b452f6b5137);
+            
+        
+
+        marker_e5a1cc85e43b9a047033ae19dbce0e18.bindPopup(popup_53f4da6fa7f4b6c7bd9b8299ffd399cf)
+        ;
+
+        
+    
+    
+            var marker_2214e72d7fdd4cb21c818d130180b108 = L.marker(
+                [35.2208788127, 126.8247391847],
+                {
+}
+            ).addTo(map_78a808317cb8642feaff0ca749ae6f1c);
+        
+    
+            var icon_deac374625f464267e35d1eaa66bd6b2 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "triangle-exclamation",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_2214e72d7fdd4cb21c818d130180b108.setIcon(icon_deac374625f464267e35d1eaa66bd6b2);
+        
+    
+        var popup_c256516118e0b0b9a9b484f68190f966 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_8b887e21870a03854de30431e6b287e7 = $(`<div id="html_8b887e21870a03854de30431e6b287e7" style="width: 100.0%; height: 100.0%;">사고발생 위치: 광주광역시 광산구 비아동 비아동707-14번지 주변<br>사고발생일자: 2020-08-11 오전 00:00<br>클러스터: 32</div>`)[0];
+                popup_c256516118e0b0b9a9b484f68190f966.setContent(html_8b887e21870a03854de30431e6b287e7);
+            
+        
+
+        marker_2214e72d7fdd4cb21c818d130180b108.bindPopup(popup_c256516118e0b0b9a9b484f68190f966)
+        ;
+
+        
+    
+    
+            var marker_9772cdb1395ccea945d93091043d7dd3 = L.marker(
+                [35.2205000587, 126.8246532854],
+                {
+}
+            ).addTo(map_78a808317cb8642feaff0ca749ae6f1c);
+        
+    
+            var icon_745efea658a07935bcdc046059561c00 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "triangle-exclamation",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_9772cdb1395ccea945d93091043d7dd3.setIcon(icon_745efea658a07935bcdc046059561c00);
+        
+    
+        var popup_d4ccf828b3fec35c24c313f32805a3b3 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d850f0cd952289be83650c97ee53ed70 = $(`<div id="html_d850f0cd952289be83650c97ee53ed70" style="width: 100.0%; height: 100.0%;">사고발생 위치: 광주광역시 광산구 비아동 707-8<br>사고발생일자: 2020-08-11 오전 00:00<br>클러스터: 32</div>`)[0];
+                popup_d4ccf828b3fec35c24c313f32805a3b3.setContent(html_d850f0cd952289be83650c97ee53ed70);
+            
+        
+
+        marker_9772cdb1395ccea945d93091043d7dd3.bindPopup(popup_d4ccf828b3fec35c24c313f32805a3b3)
+        ;
+
+        
+    
+    
+            var marker_fa3c9635de8a11324408449172dce8b8 = L.marker(
+                [35.1468494184, 126.8698836921],
+                {
+}
+            ).addTo(map_78a808317cb8642feaff0ca749ae6f1c);
+        
+    
+            var icon_e2693afbc6d4b1b958edffa440064cb2 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "triangle-exclamation",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_fa3c9635de8a11324408449172dce8b8.setIcon(icon_e2693afbc6d4b1b958edffa440064cb2);
+        
+    
+        var popup_2a8a6c0b9738a9124e4ea7c148149697 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_fa4f59c93d3fc9c36ba795dbb4aaf7d7 = $(`<div id="html_fa4f59c93d3fc9c36ba795dbb4aaf7d7" style="width: 100.0%; height: 100.0%;">사고발생 위치: 광주광역시 서구 쌍촌동 1229<br>사고발생일자: 2020-08-10 오전 00:00<br>클러스터: 33</div>`)[0];
+                popup_2a8a6c0b9738a9124e4ea7c148149697.setContent(html_fa4f59c93d3fc9c36ba795dbb4aaf7d7);
+            
+        
+
+        marker_fa3c9635de8a11324408449172dce8b8.bindPopup(popup_2a8a6c0b9738a9124e4ea7c148149697)
+        ;
+
+        
+    
+    
+            var marker_939c67f7c35c8367d9b5effec7f762d1 = L.marker(
+                [35.1465974208, 126.8699687716],
+                {
+}
+            ).addTo(map_78a808317cb8642feaff0ca749ae6f1c);
+        
+    
+            var icon_c68323c2cfea427fe1dea4bb82b975c5 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "triangle-exclamation",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_939c67f7c35c8367d9b5effec7f762d1.setIcon(icon_c68323c2cfea427fe1dea4bb82b975c5);
+        
+    
+        var popup_ea1b3796e895b2057f3ff5f267e62b2b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_5eface6822e91501e9180eee97fd8fb1 = $(`<div id="html_5eface6822e91501e9180eee97fd8fb1" style="width: 100.0%; height: 100.0%;">사고발생 위치: 광주광역시 서구 쌍촌동 1229번지 인근<br>사고발생일자: 2020-08-10 오전 00:00<br>클러스터: 33</div>`)[0];
+                popup_ea1b3796e895b2057f3ff5f267e62b2b.setContent(html_5eface6822e91501e9180eee97fd8fb1);
+            
+        
+
+        marker_939c67f7c35c8367d9b5effec7f762d1.bindPopup(popup_ea1b3796e895b2057f3ff5f267e62b2b)
+        ;
+
+        
+    
+    
+            var marker_261f3f7e99e87f66e627ebd78bcf4b2b = L.marker(
+                [37.2328629188, 127.286407536],
+                {
+}
+            ).addTo(map_78a808317cb8642feaff0ca749ae6f1c);
+        
+    
+            var icon_46f0f8b368cafa43ddef4c024d0e2100 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "triangle-exclamation",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_261f3f7e99e87f66e627ebd78bcf4b2b.setIcon(icon_46f0f8b368cafa43ddef4c024d0e2100);
+        
+    
+        var popup_615e9f99498e54be9ff4e71ef3af9115 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_06636694ceab9cfd43179610c44cfa43 = $(`<div id="html_06636694ceab9cfd43179610c44cfa43" style="width: 100.0%; height: 100.0%;">사고발생 위치: 경기도  양지면 814<br>사고발생일자: 2020-08-09 오전 00:00<br>클러스터: 34</div>`)[0];
+                popup_615e9f99498e54be9ff4e71ef3af9115.setContent(html_06636694ceab9cfd43179610c44cfa43);
+            
+        
+
+        marker_261f3f7e99e87f66e627ebd78bcf4b2b.bindPopup(popup_615e9f99498e54be9ff4e71ef3af9115)
+        ;
+
+        
+    
+    
+            var marker_78ac6c0ce95fb45ecd129f731b98b2c1 = L.marker(
+                [37.2329689673, 127.2860471183],
+                {
+}
+            ).addTo(map_78a808317cb8642feaff0ca749ae6f1c);
+        
+    
+            var icon_f2a52a1c1934b92828e0f6882c41853c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "triangle-exclamation",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_78ac6c0ce95fb45ecd129f731b98b2c1.setIcon(icon_f2a52a1c1934b92828e0f6882c41853c);
+        
+    
+        var popup_22c87fc2cbb1a51eeae3d7f3d5485ec9 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b3d6c616f27ba694ea330432931d4fcb = $(`<div id="html_b3d6c616f27ba694ea330432931d4fcb" style="width: 100.0%; height: 100.0%;">사고발생 위치: 경기도 용인시 처인구 양지면 남곡리 130-2<br>사고발생일자: 2020-08-03 오전 00:00<br>클러스터: 34</div>`)[0];
+                popup_22c87fc2cbb1a51eeae3d7f3d5485ec9.setContent(html_b3d6c616f27ba694ea330432931d4fcb);
+            
+        
+
+        marker_78ac6c0ce95fb45ecd129f731b98b2c1.bindPopup(popup_22c87fc2cbb1a51eeae3d7f3d5485ec9)
+        ;
+
+        
+    
+    
+            var marker_53ec4fb736bd2a9dd9ba493e397a9f10 = L.marker(
+                [35.1403037346, 126.9220691309],
+                {
+}
+            ).addTo(map_78a808317cb8642feaff0ca749ae6f1c);
+        
+    
+            var icon_21b62869762dceb933c49d1d36c64de7 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "triangle-exclamation",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_53ec4fb736bd2a9dd9ba493e397a9f10.setIcon(icon_21b62869762dceb933c49d1d36c64de7);
+        
+    
+        var popup_a99c790f98e08083b384cbff5db9bf76 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_9d3de1aa9f05281fec3933098cc04f62 = $(`<div id="html_9d3de1aa9f05281fec3933098cc04f62" style="width: 100.0%; height: 100.0%;">사고발생 위치: 광주광역시 동구 제봉로 15<br>사고발생일자: 2020-08-08 오전 00:00<br>클러스터: 35</div>`)[0];
+                popup_a99c790f98e08083b384cbff5db9bf76.setContent(html_9d3de1aa9f05281fec3933098cc04f62);
+            
+        
+
+        marker_53ec4fb736bd2a9dd9ba493e397a9f10.bindPopup(popup_a99c790f98e08083b384cbff5db9bf76)
+        ;
+
+        
+    
+    
+            var marker_301816fe72d2ba3a1187d243bc96d949 = L.marker(
+                [35.1402664474, 126.9221227751],
+                {
+}
+            ).addTo(map_78a808317cb8642feaff0ca749ae6f1c);
+        
+    
+            var icon_cc04702ed25b6e47cbc9dc61798d78bd = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "triangle-exclamation",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_301816fe72d2ba3a1187d243bc96d949.setIcon(icon_cc04702ed25b6e47cbc9dc61798d78bd);
+        
+    
+        var popup_c5bb14ab48e6f15900429f810a978a27 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_6d9fdcfc92b4c52f580de6248a857532 = $(`<div id="html_6d9fdcfc92b4c52f580de6248a857532" style="width: 100.0%; height: 100.0%;">사고발생 위치: 광주광역시 동구 학동 994<br>사고발생일자: 2020-08-08 오전 00:00<br>클러스터: 35</div>`)[0];
+                popup_c5bb14ab48e6f15900429f810a978a27.setContent(html_6d9fdcfc92b4c52f580de6248a857532);
+            
+        
+
+        marker_301816fe72d2ba3a1187d243bc96d949.bindPopup(popup_c5bb14ab48e6f15900429f810a978a27)
+        ;
+
+        
+    
+    
+            var marker_ffb931a66bc1cb8a7be1e4174c68d8bf = L.marker(
+                [35.140063, 126.92252],
+                {
+}
+            ).addTo(map_78a808317cb8642feaff0ca749ae6f1c);
+        
+    
+            var icon_30f6dac626690300da0377cf32ec35d1 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "triangle-exclamation",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_ffb931a66bc1cb8a7be1e4174c68d8bf.setIcon(icon_30f6dac626690300da0377cf32ec35d1);
+        
+    
+        var popup_9ff412e55f427cc93d98f117d054efb2 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d3a490ab370ff21e8cd5ee0b0de7d073 = $(`<div id="html_d3a490ab370ff21e8cd5ee0b0de7d073" style="width: 100.0%; height: 100.0%;">사고발생 위치: 광주광역시 동구 학동 12-1번지<br>사고발생일자: 2019-05-30 오전 00:00<br>클러스터: 35</div>`)[0];
+                popup_9ff412e55f427cc93d98f117d054efb2.setContent(html_d3a490ab370ff21e8cd5ee0b0de7d073);
+            
+        
+
+        marker_ffb931a66bc1cb8a7be1e4174c68d8bf.bindPopup(popup_9ff412e55f427cc93d98f117d054efb2)
+        ;
+
+        
+    
+    
+            var marker_ce37541496f4a2e9d7761ff593c6be87 = L.marker(
+                [36.9912111206, 127.586867378],
+                {
+}
+            ).addTo(map_78a808317cb8642feaff0ca749ae6f1c);
+        
+    
+            var icon_26ab7cac169bc793262d962fbc6539de = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "triangle-exclamation",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_ce37541496f4a2e9d7761ff593c6be87.setIcon(icon_26ab7cac169bc793262d962fbc6539de);
+        
+    
+        var popup_5a4566589bb95fa2e6113aa4eb65169b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e7d87ca27dcad645afdb260eaafb7c7c = $(`<div id="html_e7d87ca27dcad645afdb260eaafb7c7c" style="width: 100.0%; height: 100.0%;">사고발생 위치: 충청북도 음성군 금왕읍 무극리 523-3<br>사고발생일자: 2020-08-06 오전 00:00<br>클러스터: 36</div>`)[0];
+                popup_5a4566589bb95fa2e6113aa4eb65169b.setContent(html_e7d87ca27dcad645afdb260eaafb7c7c);
+            
+        
+
+        marker_ce37541496f4a2e9d7761ff593c6be87.bindPopup(popup_5a4566589bb95fa2e6113aa4eb65169b)
+        ;
+
+        
+    
+    
+            var marker_51a9c06a5a492a3604ec576bebf12aea = L.marker(
+                [36.9914483218, 127.5869488367],
+                {
+}
+            ).addTo(map_78a808317cb8642feaff0ca749ae6f1c);
+        
+    
+            var icon_3f43a66050759ec4d574641eb521fad2 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "triangle-exclamation",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_51a9c06a5a492a3604ec576bebf12aea.setIcon(icon_3f43a66050759ec4d574641eb521fad2);
+        
+    
+        var popup_4661783bdc461029cf4bea896128d1c3 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f095133a2223056e807ce0d5f6e55e5c = $(`<div id="html_f095133a2223056e807ce0d5f6e55e5c" style="width: 100.0%; height: 100.0%;">사고발생 위치: 충청북도 음성군 금왕읍 무극로 221<br>사고발생일자: 2020-07-30 오전 00:00<br>클러스터: 36</div>`)[0];
+                popup_4661783bdc461029cf4bea896128d1c3.setContent(html_f095133a2223056e807ce0d5f6e55e5c);
+            
+        
+
+        marker_51a9c06a5a492a3604ec576bebf12aea.bindPopup(popup_4661783bdc461029cf4bea896128d1c3)
+        ;
+
+        
+    
+    
+            var marker_5e063271da9c9c478ad2f7c550afe218 = L.marker(
+                [37.507173, 126.72047],
+                {
+}
+            ).addTo(map_78a808317cb8642feaff0ca749ae6f1c);
+        
+    
+            var icon_fe316b0f69f7ddc97e8649d38e68a773 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "triangle-exclamation",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_5e063271da9c9c478ad2f7c550afe218.setIcon(icon_fe316b0f69f7ddc97e8649d38e68a773);
+        
+    
+        var popup_001efa6199e01554184a13aa3fb7a8e3 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_eb4d7c50783c4bf89fbe93ee32596dd4 = $(`<div id="html_eb4d7c50783c4bf89fbe93ee32596dd4" style="width: 100.0%; height: 100.0%;">사고발생 위치: 인천광역시 부평구 청천동  112 번지 쌍용아파트 삼거리<br>사고발생일자: 2019-02-06 오전 00:00<br>클러스터: 37</div>`)[0];
+                popup_001efa6199e01554184a13aa3fb7a8e3.setContent(html_eb4d7c50783c4bf89fbe93ee32596dd4);
+            
+        
+
+        marker_5e063271da9c9c478ad2f7c550afe218.bindPopup(popup_001efa6199e01554184a13aa3fb7a8e3)
+        ;
+
+        
+    
+    
+            var marker_f48c28e308ab37b60a29128186eb9a4e = L.marker(
+                [37.507173, 126.72047],
+                {
+}
+            ).addTo(map_78a808317cb8642feaff0ca749ae6f1c);
+        
+    
+            var icon_b638df7c57f2fbb03851d367eb508183 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "triangle-exclamation",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_f48c28e308ab37b60a29128186eb9a4e.setIcon(icon_b638df7c57f2fbb03851d367eb508183);
+        
+    
+        var popup_eadcd07c9b1f52b8b73d77dbd5edb26d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_105475baa009af2f08b7184892819539 = $(`<div id="html_105475baa009af2f08b7184892819539" style="width: 100.0%; height: 100.0%;">사고발생 위치: 인천광역시 부평구 청천동  112 번지 쌍용아파트 삼거리<br>사고발생일자: 2019-02-08 오전 00:00<br>클러스터: 37</div>`)[0];
+                popup_eadcd07c9b1f52b8b73d77dbd5edb26d.setContent(html_105475baa009af2f08b7184892819539);
+            
+        
+
+        marker_f48c28e308ab37b60a29128186eb9a4e.bindPopup(popup_eadcd07c9b1f52b8b73d77dbd5edb26d)
+        ;
+
+        
+    
+    
+            var marker_debb9ffc5440587140c2730269679100 = L.marker(
+                [37.507173, 126.72047],
+                {
+}
+            ).addTo(map_78a808317cb8642feaff0ca749ae6f1c);
+        
+    
+            var icon_f84cf538e8421424b93c5c24ea5419c9 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "triangle-exclamation",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_debb9ffc5440587140c2730269679100.setIcon(icon_f84cf538e8421424b93c5c24ea5419c9);
+        
+    
+        var popup_db56927b82e6106e2c2a3eeca88cd0ce = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d0aa9e49695fd6ec5d2ac6d0ae497ab0 = $(`<div id="html_d0aa9e49695fd6ec5d2ac6d0ae497ab0" style="width: 100.0%; height: 100.0%;">사고발생 위치: 인천광역시 부평구 청천동  112 번지 쌍용아파트 삼거리<br>사고발생일자: 2019-01-18 오전 00:00<br>클러스터: 37</div>`)[0];
+                popup_db56927b82e6106e2c2a3eeca88cd0ce.setContent(html_d0aa9e49695fd6ec5d2ac6d0ae497ab0);
+            
+        
+
+        marker_debb9ffc5440587140c2730269679100.bindPopup(popup_db56927b82e6106e2c2a3eeca88cd0ce)
+        ;
+
+        
+    
+</script>
+</html>
